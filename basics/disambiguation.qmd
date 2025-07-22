@@ -1,0 +1,41 @@
+# Institutional Disambiguation in Bibliometrics
+
+## What does disambiguation mean in Bibliometrics?
+Disambiguation of affiliation data refers to the process of accurately identifying and distinguishing the institutional affiliations of authors in scholarly publications.  This involves resolving ambiguities and variations in the way institutions are named or represented in publication data. For instance, an institution could be referred to by different names or acronyms, or multiple departments within a single institution could be listed separately. The aim is to ensure that each publication is correctly attributed to the right institution. This also includes diachronic changes, i.e. affiliations splitting up or merging, like in the case of the Karlsruhe Institute of Technology or (at least temporarily) the Berlin Institute of Health. Apart from institutional disambiguation, similar principles are being applied to disambiguate author names, which usually proves to be a significantly harder challenge for various reasons.
+
+## Why is it Important?
+Disambiguation is the prerequisite for accurate attribution. This aspect might be the simplest factor why disambiguation is important in bibliometrics: to ensure correct attribution of research output to institutions, crucial for institutional rankings, reputation, and funding. The notion of accuracy of attribution is not limited to evaluative bibliometrics such as productivity assessments and impact evaluations. Rather, it also is relevant, maybe even more relevant, in exploratory bibliometrics, e.g. in the context of analyses of collaboration networks. Yet, disambiguation also provides further benefits beyond bibliometrics, e.g. in the context of in-house library and resource management of organizations. Finally, disambiguation supports overall research visibility of an organization by accurately showcasing an institution's research contributions as well as enhancing overall addressability, aiding in visibility and recognition in industry, policy and the academic communities. All in all, disambiguation provides the basis for fairer and more meaningful comparisons between institutions and is indispensable for providing clean and high quality data for policy-making and strategic decisions in research management.
+
+## How Does it Work?
+There are numerous disambiguation approaches. Some will focus on the use of structure-detection using multiple pieces of information. Others will focus on fuzzy matching incorporating spelling errors. Other approaches again might focus on so-called *master list approaches* that are basically extensively curated thesauri of spelling variants. Other approaches again aim to use complementary data, such as WikiData, to clean institution strings. In the Competence Network Bibliometrics the current approach is to use regular expressions, basically matching for delicately definable patterns rather than *plain* searches, to define an enormous set of positive and negative rules on how institution strings are consolidated. These rules are applied to clean, if possible, to the level of institutes and then aggregate back to the level of the institution as a whole including start and end dates to account for changes in institutional setups. Most of the approaches mentioned have a quite similar workflow, which includes the following steps.
+
+1. Data Collection: Gathering affiliation data from consolidated data sources or publication records.
+2. Identification of Variations: Recognizing different variations and representations of the same institution (differences based on the approach chosen).
+3. Standardization and Matching: Standardizing the names and details of institutions and matching different variants to a single, standardized form.
+4. Continuous Updating: Regularly updating the disambiguation process to accommodate new institutions, mergers, name changes, etc.
+
+The recursiveness and circular nature of this idealized approach should make it clear that disambiguation usually is not a *one-shot* task but rather a continuous effort. Yet, for specific approaches and questions using smaller datasets it may be admissible to use combined approaches including structure detection and manual inference to arrive at high quality data. 
+
+## Limitations
+
+#### All data is dirty all the time
+Disambiguation can quickly become a highly complex and resource intensive task. Assuming that commercial, or non-commercial for that matter, databases are sufficient for evaluatory or exploratory purposes might be a gross lapse of judgment. Even though newer approaches aim to mitigate the problem and some providers try to shift cleaning either into algorithms, communities or clients, there currently is no database that is perfectly clean in the regard described above, even though they might claim so in sales pitches and promotional material.
+
+#### Disambiguating data is like feeding a dragon
+The process can be complex and resource-intensive, requiring sophisticated algorithms and expert intervention. All these things are costly and will require continuous and/or distributed efforts to achieve. As soon as manual inference comes into play knowledge about the national or local organizational landscape both within and beyond stereotypical *research organizations* is an absolute must!  At least for now high quality data simply won’t come cheap. Also, affiliation data is continually changing, making ongoing maintenance a challenge as well as an imperative.
+
+#### Don’t expect disambiguation to be standardized (yet)
+Disambiguation will sometimes feature an obscene variability across sources. How affiliation data is processed by the different data providers is not consistent or comparable. This lack of standardisation can make integration of data and harmonization efforts a complex task. 
+
+## Further Reading
+
+Daraio, C., Lenzerini, M., Leporelli, C., Naggar, P., Bonaccorsi, A., & Bartolucci, A. (2016). The advantages of an ontology-based data management approach: Openness, interoperability and data quality. *Scientometrics, 108*(1), 441–455. <https://doi.org/10.1007/s11192-016-1913-6>
+
+Donner, P., Rimmert, C., & Van Eck, N. J. (2020). Comparing institutional-level bibliometric research performance indicator values based on different affiliation disambiguation systems. *Quantitative Science Studies, 1*(1), 150–170. <https://doi.org/10.1162/qss_a_00013>
+
+Müller, M.-C., Reitz, F., & Roy, N. (2017). Data sets for author name disambiguation: An empirical analysis and a new resource. *Scientometrics, 111*(3), 1467–1500. <https://doi.org/10.1007/s11192-017-2363-5>
+
+Rimmert, C., Schwechheimer, H., & Winterhager, M. (2017). Disambiguation of author addresses in bibliometric databases - technical report. Bielefeld: Universität Bielefeld, Institute for Interdisciplinary Studies of Science (I²SoS).
+
+Tang, L., & Walsh, J. P. (2010). Bibliometric fingerprints: Name disambiguation based on approximate structure equivalence of cognitive maps. *Scientometrics, 84*(3), 763–784. <https://doi.org/10.1007/s11192-010-0196-6>
+

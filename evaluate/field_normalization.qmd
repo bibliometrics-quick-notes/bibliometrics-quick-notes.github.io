@@ -1,0 +1,46 @@
+# Field Normalization
+
+## What is Field Normalization?
+Field normalization is a process used in bibliometrics to adjust for variations across different scientific fields when comparing bibliometric indicators, such as citation counts. This is necessary because different scientific fields have distinct publication and citation practices.
+
+## Why is it important?
+Imagine comparing a biology paper and a mathematics paper based solely on their citation counts. This might be misleading because biology papers, in general, tend to receive more citations due to the nature of the field. Field normalization aims to level the playing field, allowing for a fairer comparison.
+
+## How does it work?
+Determining expected values: Normalized indicators operate on a notion of the *average*, the *usual*, the *expected* etc… In simple terms: What we can use to assess if something is *a lot*. In order to normalize indicators, we need to calculate a baseline for a specific field. This usually involves calculating the average number of citations for papers in that field, published in a particular year. The median, despite being more robust toward the outliers and right-skewed distributions we find in citation counts, is often not a good measure as the median often does not vary. More often than not, the median might simply be 0. Other percentiles such as the Top 10% or Top 1%, i,e, the 90th-percentile or 99th-percentile, are used in another context.
+
+Accounting for the expected values: In the next step, the citation count of an individual paper is compared to this baseline. We achieve this by simply dividing the observed value by the expected value calculated in step 1. For example, if the average citation count in field X is 10 and a paper in field X has 20 citations, it is performing above the average for its field. Most normalized indicators will therefore be centered around 1 as the *neutral* outcome of normalization. The indicator designer might choose to center an indicator at 0. In this case usually a) 1 is subtracted from the ratio or b) a logarithm is applied to the ratio. In the latter case, there is also an element of diminishing returns built into the indicator.
+
+## Limitations
+
+#### Not sensitive enough
+Some critics of this approach argue that normalized indicators as they are described above are not useful as they do not vary over time. 
+
+#### The distribution of citations is too skewed
+The arithmetic mean is sensitive to outliers. In the case of the distribution of citation counts this is usually skewed to the right, i.e. there are a lot of papers rarely being cited and a few that are cited disproportionately often. Critics argue that this makes the mean a bad measure in such cases. They propose to use different measures such as the so-called *Excellence rate* or ppTOPX (ppTop10, ppTop5…) as it a) focuses on the politically relevant issue of *excellence* and ignoring *noise* and b) is not prone to distortion by the mean.
+
+#### (Often) too reliant on classifications
+This critique is mostly oriented toward field- or category-oriented normalization. It does not account for normalization based on average citation counts of journals such as the JCR (Journal Citation Rate). The main point is that classifications may mis-represent what is happening in science and underestimate the impact of inter- and transdisciplinary research or at the very least over-represent what is happening in *core disciplines*. Among other limitations the Source Normalized Citation Impact (SNIP) by Moed & Colleagues addresses the problem of classification by constructing the *field* as a set of journals citing a journal in question, thereby contextualizing the journal by its reception.
+
+#### Practices of referencing can be biased against new entrants
+Some more fundamental criticism is put forward by critics relating to the Matthew Effect. In a nutshell, the Matthew effect describes the phenomenon that prestigious authors receive a premium on their reputation, i.e. they get more citations simply because they are more well known and have a higher status or established reputation. This argument usually calls into question the validity of evaluatory citation analysis in general and is an issue of theories of citation.
+
+#### Citations reflect simplified notions of impact. 
+A similar critique to the aforementioned argument calls into question the validity of citations as measures of quality. This critique is oriented toward the notion that impact should not be reduced to what is often referred to as *simplified counting*. At best, multiple indicators should be used.
+
+#### Bibliometrics and Scientometrics have no theory of scientific fields
+Some critics argue that the scientometrics community has no convincing theory of what delineates topics from scientific fields. Hence, normalization efforts reflect mere categorization efforts of journals or scientific articles that reflect rather artificial boundaries and neither account for emerging scientific fields nor for phenomena of interrelatedness such as inter- and transdisciplinarity.
+
+## Further Reading
+
+Bornmann, L., Haunschild, R., & Mutz, R. (2020). Should citations be field-normalized in evaluative bibliometrics? An empirical analysis based on propensity score matching. *Journal of Informetrics, 14*(4), 101098. <https://doi.org/10.1016/j.joi.2020.101098>
+
+Bornmann, L. (2020). How can citation impact in bibliometrics be normalized? A new approach combining citing-side normalization and citation percentiles. *Quantitative Science Studies, 1*(4), 1553–1569. <https://doi.org/10.1162/qss_a_00089>
+
+Heintz, B. (2010). Numerische Differenz. Überlegungen zu einer Soziologie des (quantitativen) Vergleichs / Numerical difference. Toward a sociology of (quantitative) comparisons. *Zeitschrift für Soziologie, 39*(3), 162–181. <https://doi.org/10.1515/zfsoz-2010-0301>
+
+Hicks, D., Wouters, P., Waltman, L., de Rijcke, S., & Rafols, I. (2015). Bibliometrics: The Leiden Manifesto for Research Metrics. *Nature, 520*(7548), 429–431. <https://doi.org/10.1038/520429a>
+
+Merton, R. K. (1968). The Matthew effect in science: The reward and communication systems of science are considered. *Science, 159*(3810), 56–63. <https://doi.org/10.1126/science.159.3810.56>
+
+Moed, H. F. (2010). Measuring contextual citation impact of scientific journals. *Journal of Informetrics, 4*(3), 265–277. <https://doi.org/10.1016/j.joi.2010.01.002>

@@ -1,0 +1,45 @@
+# Fractional Counting
+
+## What is Fractional Counting?
+Fractional counting relates to one of the major branches of evaluative bibliometrics, i.e. the evaluation of productivity or output volume. It is a method used to attribute credit for scholarly publications, particularly those with multiple authors. The overall goal is to account for a notion of distributive fairness matching efforts. 
+
+## Why is it important?
+In many fields, collaborative research leading to multi-author papers is common. If the assessment of productivity is aimed to be relative to the efforts involved, doubts about the validity of simply summing up the number of contributions may emerge. Shouldn’t it make a difference how many authors are involved then? This is where fractional counting comes in. The basic idea of fractional counting is to account for differences in distribution of labor, i.e. accounting for authors sharing the work when compiling a scientific contribution.  Assigning full credit to each author can inflate the apparent productivity and impact of individuals or institutions involved.  Unlike full counting methods, where each author or institution gets full credit for a publication, fractional counting divides the credit among the contributors based on their number.
+
+## How Does It Work?
+
+#### Credit Allocation on different levels
+
+In a paper with multiple authors, instead of each author receiving one full count for the publication, the credit is fractionally divided. For example, if a paper has four authors, each author might receive 0.25 (1/4th) of a count for that paper. Yet, the level of allocation as well as the level of analysis are important. Depending on the notion of what *contributes* to the paper the level of fractioning might vary. Despite author-level fractioning, other levels may be used, e.g. country level, organization level, address level, i.e. address of the institution, which might be relevant for institutions with multiple sites or locations,  etc… Specific forms may also involve pooling the effort to one author, e.g. the principal investigator, last author position in medicine, or the first author representing the *main author*. Yet, these follow a completely different understanding of fairness. 
+
+#### Impact on Metrics
+
+Fractional counting affects various bibliometric indicators. This impact is strictly not limited to analyses of publication volume and productivity but also influences the way citation analyses are being conducted. 
+
+#### Variations in Practice
+
+The exact method and data source of fractional counting can vary. Comparing data from different sources, e.g. WoS, Socpus, OpenAlex or Google Scholar, as well as different levels of fractioning is strictly not advised, let alone, merging them into one unified dataset for analysis.
+
+## Limitations
+
+#### Simple fractioning is not accounting for divisions of labor
+Fractioning rests on the rather plausible idea that productivity is relative to the number of authors involved. Yet, dividing by the number of entities might not represent the actual efforts each author or organization has invested in the paper.  Recent developments in the publication landscape try to account for this by introducing contribution sections. In these sections, the authors state in what parts of the research and publication process they have been involved in. 
+
+#### Fractional counting can put a penalty on cooperation
+Using fractional counting introduces a penalty on cooperation. This might lead to misrepresentation of outputs. Imagine an organization that a couple of years ago made it their mission to cooperate more with other organizations. If that mission is being put to work, it is rather plausible that the number of co-authored papers with authors from other organizations will increase. This could lead to a situation where full-counts, i.e. whole counting of papers, increase but the number of fractional papers level out as more authors are involved due to cooperation activity. In extreme cases the fractional count could be declining while full-count increases. Always use full counts as a litmus test to understand your fractional counts.
+
+## Further Reading
+
+Aksnes, D. W., Schneider, J. W., & Gunnarsson, M. (2012). Ranking national research systems by citation indicators. A comparative analysis using whole and fractionalised counting methods. *Journal of Informetrics, 6*(1), 36–43. <https://doi.org/10.1016/j.joi.2011.08.002>
+
+Cronin, B. (2001). Hyperauthorship: A postmodern perversion or evidence of a structural shift in scholarly communication practices? *Journal of the American Society for Information Science and Technology, 52*(7), 558–69. <https://doi.org/10.1002/asi.1097>
+
+Donner, P. (2024). Remarks on modified fractional counting. *Journal of Informetrics, 18*(4), 101585. <https://doi.org/10.1016/j.joi.2024.101585>
+
+Gauffriau, M., Larsen, P. O., Maye, I., Roulin-Perriard, A., & Von Ins, M. (2008). Comparisons of results of publication counting using different methods. *Scientometrics, 77*(1), 147–76. <https://doi.org/10.1007/s11192-007-1934-2>
+
+Leydesdorff, L., & Opthof, T. (2010). Normalization at the field level: Fractional counting of citations. <https://doi.org/10.48550/ARXIV.1006.2896>
+
+Sivertsen, G., Rousseau, R., & Zhang, L. (2019). Measuring scientific contributions with modified fractional counting. *Journal of Informetrics, 13*(2), 679–94. <https://doi.org/10.1016/j.joi.2019.03.010>
+
+Waltman, L., & Van Eck, N. J. (2015). Field-normalized citation impact indicators and the choice of an appropriate counting method. *Journal of Informetrics, 9*(4), 872–94. <https://doi.org/10.1016/j.joi.2015.08.001>

@@ -1,0 +1,42 @@
+# AoR (Averages of Ratios) vs. RoA (Ratios of Averages) in Bibliometrics
+
+## What is it?
+Averages (or Means) of Ratios (AoR) and Ratios of Averages (or Means) (RoA) are two distinct statistical approaches used in bibliometric analysis and other fields where comparative analysis of data sets is required. The issue is most prevalent in evaluatory bibliometrics when using average-based indicators, i.e. indicators that somehow aim to normalize output or citations against something to be considered *the usual*, i.e. an average. In simple terms, the AoR approach involves first calculating the ratio for individual pairs (!) of data points across two data sets, and then finding the average (mean) of these ratios. This gives equal weight to each data point, focusing on the individual level of comparison before aggregating. In RoA, by contrast, this approach calculates the average (mean) for each data set (!) separately and then takes the ratio of these two means. This method emphasizes the collective characteristics of each data set, treating the data sets as aggregated wholes from the onset.
+
+## Why is it important?
+The choice between these two methods can significantly influence the outcome and interpretation of bibliometric analyses, particularly when comparing groups or categories. Both methods reflect different aspects of the data and what to learn from it. AoR can highlight individual-level differences or similarities, while RoA provides a comparison at the aggregate level. The selection of the appropriate method therefore depends on the research question and the nature of the data, making it crucial to understand both approaches for accurate and meaningful analysis. AoR typically results in higher scores than RoA, particularly for entities with fewer papers or lower impact scores. RoA tends to underestimate the impact, especially for departments, institutions, and countries with lower scores. RoA eventually leads to inconsistencies in global averages, which should ideally sum to unity but don't always do so in practice. The choice between AoR and RoA impacts the evaluation of research performance, with AoR being generally more favorable for entities with fewer publications. 
+
+## How does it work?
+
+#### AoR: 
+
+  1. Calculate the ratio for each corresponding pair of data points across the two sets.
+  2. Sum up all these individual ratios.
+  3. Divide the total by the number of ratios to get the mean.
+
+#### RoA: 
+
+  1. Calculate the mean for each data set separately.
+  2. Divide the mean of one data set by the mean of the other to get the ratio.
+
+## Limitations
+
+#### AoR: 
+
+ - Can be heavily influenced by outliers or extreme ratios.
+ - May not accurately represent the overall characteristics of the data sets if there's significant variability within them.
+
+#### RoA: 
+
+  - Can mask individual data point variations, leading to oversimplified conclusions.
+  - May not be appropriate in cases where data sets have widely differing distributions or sizes.
+
+## Further Reading
+
+Egghe, L. (2012). Averages of ratios compared to ratios of averages: Mathematical results. *Journal of Informetrics, 6*(2), 307–317. <https://doi.org/10.1016/j.joi.2011.12.007>
+
+Egghe, L., & Rousseau, R. (1996). Average and global impact of a set of journals. *Scientometrics, 36*(1), 97–107. <https://doi.org/10.1007/BF02126648>
+
+Larivière, V., & Gingras, Y. (2011). Averages of ratios vs. ratios of averages: An empirical analysis of four levels of aggregation. *Journal of Informetrics, 5*(3), 392–399. <https://doi.org/10.1016/j.joi.2011.02.001>
+
+Vinkler, P. (1996). Model for quantitative selection of relative scientometric impact indicators. *Scientometrics, 36*(2), 223–236. <https://doi.org/10.1007/BF02017315>

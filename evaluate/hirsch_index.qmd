@@ -1,0 +1,40 @@
+# Hirsch-Index (h-index)
+
+## What is the Hirsch-Index?
+The Hirsch-Index, or h-index, is a metric developed by physicist Jorge E. Hirsch in 2005 to quantify the combined impact and productivity of a scholar's published work. In contrast to other evaluative metrics focusing either on productivity or reception of scientific publications by balancing the quantity (number of publications) and quality (citations) of scientific output seeking to combine both perspectives giving an overall notion of the *eminence* of a scholar or research organization. The h-index is defined as the number of papers (h) that have been cited at least h times. For instance, if a researcher has an h-index of 10, it means they have published 10 papers that have each been cited at least 10 times. The set of publications for which these conditions are true, i.e. they definingly contribute to the h-Index due to their received number of citations, is sometimes labeled as the *h-core* and is sometimes analyzed separately.
+
+## Why is it Important?
+The h-index is important because it provides a single figure that can suggest the significance and broad impact of a researcher's cumulative research contributions. In that respect it is a rather small scale version of a composite indicator. It's widely used in academia for evaluating the influence of a researcher's work, considering both the quantity and quality of their publications. It's also employed by funding agencies, universities, and research institutions for hiring, promotion, and funding decisions. Its composition makes it resistant to outliers, as e.g. one or two highly cited papers, or a large number of scarcely cited papers, have little effect on the Hirsch-Index. What counts is continuous performance above a certain level. This also means that with increase of the Hirsch-Index raising the index by 1 involves increasingly higher efforts if trying to *optimize* it. Finally, it is exceedingly easy to compute, making it a measure that can be performed with considerably little data as no field normalization is involved. Another benefit of the Hirsch-Index is its scalability to higher levels of aggregation making it a measure that is also applicable on the level of organizations. Despite its prominence and widespread application it is also an object of strong criticism in the current evaluation landscape.
+
+## How Does it Work?
+Calculating the h-index involves the following steps:
+
+1. Listing Publications and Citations: Compile a list of the researcher's publications, along with the number of citations each paper has received.
+2. Ranking by Citation Count: Rank the publications according to the number of citations.
+3. Find the h-index threshold: Find the point where the highest rank of the paper in the list is equal to or greater than the number of citations it has received. This number is the h-index.
+
+## Limitations
+
+#### The Hirsch-Index favors senior researchers
+The Hirsch-Index is only meaningfully interpretable when used to understand differences within the group of established researchers for the simple fact that the output is the first limiting factor for the Hirsch-Index. It needs a minimum of X papers to have a Hirsch-Index of X. Junior and early career researchers will be largely discriminated against as they may only have a few papers.
+
+#### The Hirsch-Index is not helpful to compare researchers from different fields
+The strength of the Hirsch-Index, namely its integration of output and reception and the fact it does not, per definition at least, require field-normalization, also produces a weakness making it not universally applicable across different academic disciplines due to variations in publication and citation practices.
+
+#### The Hirsch-Index can be a metric garbage compactor
+As the Hirsch-Index is neither field nor journal normalized it produces another issue as it ignores almost all context of citations. For instance, it does not distinguish between citations from high-quality sources and less reputable ones. In theory, a high Hirsch-Index can be achieved by a combination of high levels of self-citation and strategic publication in low impact journals. Or any other means of gaming citation counts for that matter.
+
+#### The Hirsch-Index features strong fluctuations between databases and fields
+The Hirsch-Index can vary enormously depending on the database used with the impact of database selection depending on the field, or, more precisely the overall publication culture prevalent in a field and the tendency to publish pre-prints. Usually, differences between Web of Science (WoS) and Scopus are rather small with large differences being mostly between the aforementioned and Google Scholar with strong pre-publishing fields such as computer science receiving very high premiums in Google Scholar. 
+
+## Further Reading
+
+Bar-Ilan, J. (2008). Which h-index? — A comparison of WoS, Scopus and Google Scholar. *Scientometrics, 74*(2), 257–71. <https://doi.org/10.1007/s11192-008-0216-y>
+
+Bornmann, L., & Daniel, H.-D. (2007). What do we know about the h index? *Journal of the American Society for Information Science and Technology, 58*(9), 1381–85. <https://doi.org/10.1002/asi.20609>
+
+Egghe, L. (2010). The Hirsch index and related impact measures. *Annual Review of Information Science and Technology, 44*(1), 65–114. <https://doi.org/10.1002/aris.2010.1440440109>
+
+Hirsch, J. E. (2005). An index to quantify an individual’s scientific research output. *Proceedings of the National Academy of Sciences, 102*(46), 16569–72. <https://doi.org/10.1073/pnas.0507655102>
+
+Van Raan, A. F. J. (2006). Comparison of the Hirsch-index with standard bibliometric indicators and with peer judgment for 147 chemistry research groups. *Scientometrics, 67*(3), 491–502. <https://doi.org/10.1556/Scient.67.2006.3.10>

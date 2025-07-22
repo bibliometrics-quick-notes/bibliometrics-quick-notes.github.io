@@ -1,0 +1,40 @@
+# Composite Indicators in Bibliometrics
+
+## What is it?
+In the field of bibliometrics, composite indicators (CIs) are sophisticated metrics formulated by integrating multiple individual indicators into a single, overarching index. In this sense CIs resemble other statistical concepts found in general statistical applications, e.g. additive indices. Usually composite indicators are designed to encapsulate a broader and more nuanced understanding of a complex phenomenon, e.g research performance, impact, or productivity aiming to integrate multiple facets of a phenomenon. They typically combine diverse bibliometric dimensions such as citation counts, publication volumes, journal impact factors, and collaboration metrics. In other cases bibliometric metrics can be part of composite indicators. The overall aim of CIs is to synthesize these varied elements to offer a holistic measure that captures the complex nature of scholarly activities. 
+
+## Why is it important?
+The significance of composite indicators lies in their ability to provide a holistic evaluation of a phenomenon. They overcome the limitations of singular bibliometric measures by offering a balanced perspective that encompasses various aspects of scholarly work. This comprehensive approach is particularly attractive for policy-makers, institutional administrators, research managers etc. as aid in informed decision-making, strategic planning, and resource allocation as CIs linearize a multi-dimensional concept into a singular metric. It is something that both has the flair of *holisticity* and *multidimensionality* and at the same time features the convenience of being able to sort it (most of the time descending). Furthermore, these indicators are instrumental in facilitating comparative analysis across researchers, institutions, or countries, allowing for a more equitable assessment by normalizing diverse bibliometric measures into a unified framework. One example of a composite indicator in bibliometrics is the Hirsch-Index, even though its computation is rather unique and it does subsume composite indicators more in thought than as actual reference to a type of metric. Another example for a composite indicator are the different altmetric indicators combining different outlets of (social) media into a single metric. 
+
+## How does it work?
+The development and application of composite indicators in bibliometrics involve a multi-step process that is intricately documented in the *OECD Handbook on Constructing Composite Indicators*. In a very simplified way the construction follows steps.
+
+Initially, relevant bibliometric indicators that reflect different facets of research performance, or any other phenomenon for that matter, are selected. These indicators are then polarity-harmonized (same direction), normalized to ensure comparability, typically by converting them to a common scale using a measure (e.g. Z-Transformation, rescaling etc…)  that limits the range to a predefined scale of possible values or at least aims to produce a more uniform distribution. The next steps involve the careful weighting and aggregation of these indicators, with each component assigned a specific weight based on its perceived importance in the overall assessment. Producing such weights can be very challenging and depends in part on the outcome of the previous steps. In principle it is an assessment of contribution to the overall phenomenon to be measured, or, in more simple words, answering questions such as “How many Tweets are worth a feature in a national newspaper?”. Sometimes weighting is achieved by transforming all the contributing metrics into a single *currency*, e.g. monetary values, even though such a process is, at the very best, tedious and complex. The weighted aggregation then results in the composite index, which then should be subjected to rigorous validation to ensure its reliability and validity both quantitatively, e.g. by integrating it into inferential models, but also semiotically by aiming to place it within the canon of previously established indicators. 
+
+## Limitations
+
+#### Designing composite indicators involve careful evidence and processing
+The construction of these indicators is a complex task that requires meticulous consideration in selecting components and determining their respective weights. This process can introduce subjectivity, particularly in the weighting stage, potentially skewing the final outcome.
+
+#### Compressing is not unfolding
+Over-reliance on a single composite score may also lead to oversimplification, failing to capture the nuanced and multifaceted nature of a phenomenon fully. Even though composite indicators are argued to produce a holistic view of a subject, they in the end linearize the mutli-dimensionality into a single vector of values. In this regard, there are two fractions in bibliometrics. There are those that embrace composite indicators for their merits and argue that at the very least the overall values reflect a multi-dimensional phenomenon and still provide the potential for rankings. Opposed to this perspective are those that argue that such compression may help to produce simple rankings but provide no guidelines for improvement as changes in the CIs are not reflected by underlying changes of the corresponding dimensions. At the very least these changes are overshadowed by the methodology. The proponents of this position favor capturing multidimensionality through visualization techniques, e.g. by using radar or spider plots, sacrificing the benefits of simple ranking. 
+
+
+#### Garbage in - composited garbage out
+Accuracy and reliability of composite indicators are heavily dependent on the quality and availability of the underlying data.
+
+## Further Reading
+
+El Gibari, S., Gómez, T., & Ruiz, F. (2022). Combining reference point based composite indicators with data envelopment analysis: Application to the assessment of universities. *Scientometrics, 127*(8), 4363–4395. <https://doi.org/10.1007/s11192-022-04436-0>
+
+Johnes, J. (2018). University rankings: What do they really show? *Scientometrics, 115*(1), 585–606. <https://doi.org/10.1007/s11192-018-2666-1>
+
+Makkonen, T., & Van Der Have, R. P. (2013). Benchmarking regional innovative performance: Composite measures and direct innovation counts. *Scientometrics, 94*(1), 247–262. <https://doi.org/10.1007/s11192-012-0753-2>
+
+Moon, H. S., & Lee, J. D. (2005). A fuzzy set theory approach to national composite S&T indices. *Scientometrics, 64*(1), 67–83. <https://doi.org/10.1007/s11192-005-0238-7>
+
+Nasir, A., Ali, T. M., Shahdin, S., & Rahman, T. U. (2011). Technology achievement index 2009: Ranking and comparative study of nations. *Scientometrics, 87*(1), 41–62. <https://doi.org/10.1007/s11192-010-0285-6>
+
+OECD/European Union/EC-JRC. (2008). *Handbook on constructing composite indicators: Methodology and user guide*. Paris: OECD Publishing. <https://doi.org/10.1787/9789264043466-en>
+
+Vinkler, P. (2006). Composite scientometric indicators for evaluating publications of research institutes. *Scientometrics, 68*(3), 629–642. <https://doi.org/10.1007/s11192-006-0123-z>

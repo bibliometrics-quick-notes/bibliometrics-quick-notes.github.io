@@ -1,0 +1,54 @@
+# Precision and Recall
+
+## What are Precision and Recall
+One of the main findings of the Cranfield Experiments was the development of two measures that help to formulize how improvement in several areas of information science can be measured, e.g. how good a search query is, how well a classification algorithm corresponds to expert judgment or how to evaluate the effectiveness of search systems. In a way it shares characteristics with Alpha and Beta errors, which are prominent measures in inferential statistics about asserting or rejecting a Null hypothesis and whether this is right or wrong. To understand Precision and Recall it is important to understand two separate issues. First, if documents in a result set are assigned as relevant or not relevant and second if that assignment is true or false, resulting in 4 (relevant vs. not relevant x true vs. false) conditions.
+
+> True Positive (TP): A document is deemed relevant and this assessment is true
+
+> False Positive (FP): A document is deemed relevant and this assessment is false
+
+> True Negative (TN): A document is deemed irrelevant and this assessment is true
+
+> False Negative (TN): A document is deemed irrelevant and this assessment is false
+
+**Precision** refers to the proportion of retrieved documents that are relevant. This is calculated in the following way: Take the number of relevant documents found (True Positives) and divide those by the total number of documents retrieved (the sum of True Positives and False Positives), or, in mathematical terms: $\dfrac{TP}{(TP+FP)}$. 
+
+This can be understood as a measure of *correctness*, i.e. a perfect Precision means:
+
+> All documents found are relevant!
+
+**Recall**, on the other hand, refers to the proportion of relevant documents found. This is calculated in the following way: Take the number of relevant documents found (True Positives again) and divide those by all relevant documents there are (the sum of True Positives and False Negatives), or, again in mathematical terms: $\dfrac{TP}{(TP+FN)}$. 
+
+This can be understood as a measure of *completeness*, i.e. a perfect Recall means: 
+
+> All relevant documents have been found!
+
+Precision and Recall sometimes are reported as percentages, e.g. 90%, or in decimal notation, 0.9.
+
+
+## Why is it Important?
+In bibliometrics, Precision and Recall are crucial for assessing the performance of information retrieval systems,  such as search engines and digital libraries, the quality of classification algorithms, procedures of disambiguation of authors or affiliations, quality of search queries and much more. It also helps to balance optimization strategies when doing bibliometric research. For instance, when the potential of manual post-processing is given, e.g. in an exploratory analysis when the corpus of publications will be screened for publications fitting the intended field or topic delineation, a *high recall strategy* will overall yield better results because the initial corpus will be larger and irrelevant things can be weeded out. 
+
+A similar argument can be made for classification algorithms that are being post-processed manually. Over-indexing on Recall of course could be problematic, too,
+leading to a search strategy that simply returns, in the most extreme cases, all records in a database.  High precision strategies may be more appropriate when defining a seed, e.g. when post-processing a search strategy by incorporating structural aspects such as citation networks. In this case, optimizing for precision might be worthwhile as moving back and forth in the citation tree will automatically increase recall. Overdoing high-precision strategies is not optimal either. In the most extreme case a single document might be returned which is really close to the topic but several other documents are not being found, making the seed highly dependent on this single paper leaving out substantial components, e.g. competing paradigms.
+
+## Limitations
+
+#### You usually can’t have it all
+There usually is a substantial trade-off between Precision and Recall. Often, improving Precision leads to a decrease in Recall, and vice versa, making it challenging, if not impossible, to optimize both to very high values.
+
+#### Relevance does all the work
+Sometimes, especially when doing explorative work, assigning relevance may be a very challenging task, especially when a bibliometrician has little or no domain knowledge about the field to be analyzed. Furthermore, relevance is at times elusive and highly context dependent subjecting relevance, and hence, Precision and Recall, depending on the user’s need and the specific application.
+
+#### The recursive problem of completeness
+When working exploratively a complete set of relevant documents IS the actual goal. Yet, Recall implies that we know this in advance, framing the goal to attain a complete set of relevant documents being in part dependent on having information about the complete set of relevant documents. This is obviously recursive and therefore problematic. It also shows the limits of Precision and Recall, i.e. carefully constructed (sic!) sets of documents and assessment of relevance. In many real-world scenarios, it's therefore difficult to know the total number of relevant documents, complicating the calculation of Recall. It is usually more helpful to understand Precision and Recall as *flavors of optimization* and general *guideposts* on what to achieve overall, namely correctness and completeness.
+
+## Further Reading
+
+Baeza-Yates, R., & Ribeiro-Neto, B. (2011). *Modern information retrieval: The concepts and technology behind search* (2nd ed.). Addison-Wesley Publishing Company.
+
+Cleverdon, C. W. (1972). On the inverse relationship of Recall and Precision. *Journal of Documentation, 28*(3), 195–201. <https://doi.org/10.1108/eb026538>
+
+Manning, C. D., Raghavan, P., & Schütze, H. (2009). *Introduction to information retrieval*. Cambridge University Press. <https://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf>
+
+Powers, D. M. W. (2008). Evaluation: From precision, recall and F-Measure to ROC, informedness, markedness and correlation. *Mach. Learn. Technol., 2*. <https://doi.org/10.48550/ARXIV.2010.16061>

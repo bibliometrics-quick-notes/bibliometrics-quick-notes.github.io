@@ -1,0 +1,38 @@
+# Bibliographic Coupling
+
+## What is Bibliographic Coupling?
+Bibliographic coupling (BC) occurs when two scientific papers reference the same third paper in their bibliographies. In simple terms, bibliographic coupling is the number of shared references for a pair of papers. The concept was introduced by M.M. Kessler in 1963 and has developed into a key tool in bibliometrics for analyzing the structure and development of scientific research, especially in terms of shared intellectual heritage contributing to scientific papers suggesting a direct relationship in subject matter or methodology. 
+
+## Why is it Important?
+Bibliographic coupling is important as it helps in identifying research trends and the development of scientific fields. Papers that share many references are likely to be closely related, offering insights into how researchers build upon existing knowledge. This analysis is particularly useful in identifying research clusters, understanding the evolution of topics, and detecting emerging areas of study. Also, sometimes it can help to limit down the size of large networks by using only such publications that feature a minimum bibliographic coupling of 1. 
+
+## How Does it Work?
+Computing bibliographic coupling is rather straightforward. Usually reference lists from a set of relevant scientific papers are compiled using a bibliographic database. The preferred method is to produce a citing paper x cited paper matrix (citation network). This network is an unweighted-directed graph. Unweighted directed graphs can be transformed into weighted-undirected graphs (the bibliographic coupling network) by matrix multiplication using the aforementioned matrix and performing a matrix multiplication with the transposed matrix. It should be noted that matrix multiplication, in contrast to its scalar relative, is sensitive to the order of multiplicand and multiplier. $A \cdot A^T$ is not the same as $A^T \cdot A$. When confusing the order the result is, interestingly, the co-citation network.
+
+## Limitations
+
+### Bibliographic coupling is over-indexing on citation behavior
+Bibliographic coupling is limited to the analysis of reference lists. Hence, it only reflects the similarities based on the chosen references, which might miss broader connections such as language use. 
+
+### Bibliographic coupling paints a static picture
+As mentioned above, reference lists are static. In contrast to co-citation, which can change over time as new publications citing others are being produced, bibliographic coupling is static, i.e. it will not change as the reference lists have already been compiled prior to final publication. BC therefore offers a snapshot based on the time of publication, not accounting for subsequent developments.
+
+### Bibliographic Coupling is biased toward older contributions
+More recent papers have less opportunity to be bibliographically coupled due to their shorter presence in the literature.
+
+### Bibliographic Coupling is dependent on referencing and citation culture
+Different academic fields have different referencing practices, which can affect the outcome of the analysis.
+
+## Further Reading
+
+Glänzel, W., & Czerwon, H. J. (1996). A new methodological approach to bibliographic coupling and its application to the national, regional and institutional level. *Scientometrics, 37*(2), 195–221. <https://doi.org/10.1007/BF02093621>
+
+Jarneving, B. (2005). A comparison of two bibliometric methods for mapping of the research front. *Scientometrics, 65*(2), 245–63. <https://doi.org/10.1007/s11192-005-0270-7>
+
+Kessler, M. M. (1963). Bibliographic coupling between scientific papers. *American Documentation, 14*(1), 10–25. <https://doi.org/10.1002/asi.5090140103>
+
+Kessler, M. M. (1963). Bibliographic coupling extended in time: Ten case histories. *Information Storage and Retrieval, 1*(4), 169–87. <https://doi.org/10.1016/0020-0271(63)90016-0>
+
+Weinberg, B. H. (1974). Bibliographic coupling: A review. *Information Storage and Retrieval, 10*(5–6), 189–96. <https://doi.org/10.1016/0020-0271(74)90058-8>
+
+Zhao, D., & Strotmann, A. (2008). Evolution of research activities and intellectual influences in information science 1996–2005: Introducing author bibliographic-coupling analysis. *Journal of the American Society for Information Science and Technology, 59*(13), 2070–86. <https://doi.org/10.1002/asi.20910>

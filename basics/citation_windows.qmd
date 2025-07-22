@@ -1,0 +1,46 @@
+# Citation Windows
+
+## What is a Citation Window?
+A citation window refers to the specific time period during which citations to a contribution are counted and analyzed. This window can range from a few years to several decades. In practice, however, the periods for citation windows typically range between 2 and 5 years.
+
+
+## Why is it Important?
+Using citation windows is important because they directly influence the calculation of impact of a contribution. They achieve this by addressing a specific notion of *fairness* that relates to the comparison of recent and old research. The first argument for citation windows is that old articles had more time to accumulate citations and therefore have an unfair advantage over recent ones. The second argument is that in order for a scientific article to be referenced at all, it usually needs a certain amount of time to get recognised in the publication landscape. The rather idealized idea is that an article is being read, has some relevance in some research process, the research itself is being performed, the article is being referenced in a manuscript, which again is submitted to a journal and goes through rounds of peer review until finally, after publication, and some additional time to be included in a bibliographic database, the original contribution we are interested in, has attracted a citation.  Obviously, different fields have different speeds at which research is cited. For instance, in rapidly evolving fields like information technology, shortening the citation window may be more helpful, while in disciplines with longer research cycles, such as history, longer windows may be necessary. 
+
+## How Does it Work?
+The length of a citation window strongly depends on the task at hand, the requirements toward immediacy or the research question as well as the practices of the field in question. Citations are then collected and analyzed only within this predefined period. For instance, a 5-year citation window starting from the year of publication means that only citations received within those five years are considered in the analysis. This information is not always part of publicly available data.  
+
+## Limitations
+
+#### Does not account for slow burns
+One of the primary issues with citation windows is the risk of misrepresenting the impact of research. Short windows may not capture the long-term influence of a contribution, especially in fields where citations accumulate slowly. Such *sleeping beauties* might receive little attention at first but a surge in reception after some time. If this period is no longer within the citation window this reception is being ignored.
+
+#### The longer the citation window - the older (and less relevant) the results
+Longer windows may include citations that are less relevant to the current state of the field, due to different rhythms of scientific output. In some fields publication propensity favors shorter time frames from research to publishing. This effect may even be catalyzed further when considering differences in project or research process length. In fields where rhythms are tight, longer citation windows might cover things that are no longer relevant. Yet, context matters, i.e. distinctions have to be made between citation windows as a means to discount relevance vs. a means of preventing measures from being overly influenced by matters of temporality.
+
+#### Citation windows might not fit the notion to be evaluated against
+Even though citation windows are useful for matters of comparison it may not be sensible to use when temporality is explicitly part of the concept to evaluate against. One example can be the Hirsch-Index, which puts a strong premium on *breadth of impact*, which in turn makes it a bad measure to use in the context of evaluation of junior scientists. In the case of the Hirsch-Index the notion of *breadth* does not match up to the measurement logic of restricting temporality. Similarly other evaluations that somehow address notions of *long-termedness* will not benefit from citation windows.
+
+#### Citation windows might be counterproductive for exploratory purposes
+Citation windows make intuitive sense in the context of evaluative bibliometrics. In exploratory bibliometrics they might be counter-productive. For instance, when questions of evolution or dynamics of a field are relevant to the purpose of exploring. More often than not, the exploratory bibliometrics involve understanding the *origin story* of a field or topic. Where did it come from? How did it emerge? In this case limiting analysis by using citation windows may eliminate just these interesting classics, e.g. from co-citation analyses.
+
+#### Citation windows only address one issue
+Time isn’t the only factor that influences citation counts. Document type is another very plausible candidate with review papers usually receiving a considerable premium on citations flowing in.  Moreover, the choice of a citation window can introduce bias, as it might favor certain types of publications or disciplines over others. This might not be a strong limitation or argument against the use of citation windows but should just be a reminder that citation windows do not fix all potential biases.
+
+#### Citation windows may be inherently inaccurate
+When calculating citation windows analysts have to be aware of what information specifically the citation window is calculated on. Sometimes, when calculation is performed using the publication year, publications from early months in the year may receive a substantial premium. Using the actual publication date might change the story quite a bit.
+
+#### Be aware of difference in citation windows
+There is no universal standard when it comes to citation window length. When interpreting or merging data the mere information that a citation window has been applied may therefore be insufficient. There's also the challenge of comparing studies using different citation windows, which can lead to inconsistencies in interpretation of indicators.
+
+## Further Reading
+
+Campanario, J. M. (2011). Empirical study of journal impact factors obtained using the classical two-year citation window versus a five-year citation window. *Scientometrics, 87*(1), 189–204. <https://doi.org/10.1007/s11192-010-0334-1>
+
+Donner, P. (2018). Effect of publication month on citation impact. *Journal of Informetrics, 12*(1), 330–343. <https://doi.org/10.1016/j.joi.2018.01.012>
+
+Glänzel, W. (2004). Towards a model for diachronous and synchronous citation analyses. *Scientometrics, 60*(3), 511–522. <https://doi.org/10.1023/B:SCIE.0000034391.06240.2a>
+
+Glänzel, W., Schlemmer, B., & Thijs, B. (2003). Better late than never? On the chance to become highly cited only beyond the standard bibliometric time horizon. *Scientometrics, 58*(3), 571–586. <https://doi.org/10.1023/B:SCIE.0000006881.30700.ea>
+
+Wang, J. (2013). Citation time window choice for research impact evaluation. *Scientometrics, 94*(3), 851–872. <https://doi.org/10.1007/s11192-012-0775-9>

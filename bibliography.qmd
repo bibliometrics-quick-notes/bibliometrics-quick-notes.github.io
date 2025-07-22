@@ -1,0 +1,143 @@
+# Bibliography
+
+Aksnes, D. W., Schneider, J. W., & Gunnarsson, M. (2012). Ranking national research systems by citation indicators. A comparative analysis using whole and fractionalised counting methods. *Journal of Informetrics, 6*(1), 36–43. <https://doi.org/10.1016/j.joi.2011.08.002>
+
+Baeza-Yates, R., & Ribeiro-Neto, B. (2011). *Modern information retrieval: The concepts and technology behind search* (2nd ed.). Addison-Wesley Publishing Company.
+
+Bailón-Moreno, R., Jurado-Alameda, E., Ruiz-Baños, R., & Courtial, J. P. (2005). Bibliometric laws: Empirical flaws of fit. *Scientometrics, 63*(2), 209–229. <https://doi.org/10.1007/s11192-005-0211-5>
+
+Bar-Ilan, J. (2008). Which h-index? — A comparison of WoS, Scopus and Google Scholar. *Scientometrics, 74*(2), 257–271. <https://doi.org/10.1007/s11192-008-0216-y>
+
+Blondel, V. D., Guillaume, J.-L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. *Journal of Statistical Mechanics: Theory and Experiment, 2008*(10), P10008. <https://doi.org/10.1088/1742-5468/2008/10/P10008>
+
+Bornmann, L. (2007). How can citation impact in bibliometrics be normalized? A new approach combining citing-side normalization and citation percentiles. *Quantitative Science Studies, 1*(4), 1553–1569. <https://doi.org/10.1162/qss_a_00089>
+
+Bornmann, L. (2020). An evaluation of percentile measures of citation impact, and a proposal for making them better. *Scientometrics, 124*(2), 1457–1478. <https://doi.org/10.1007/s11192-020-03512-7>
+
+Bornmann, L., & Daniel, H.-D. (2007). What do we know about the h index? *Journal of the American Society for Information Science and Technology, 58*(9), 1381–1385. <https://doi.org/10.1002/asi.20609>
+
+Bornmann, L., & Mutz, R. (2011). Further steps towards an ideal method of measuring citation performance: The avoidance of citation (ratio) averages in field-normalization. *Journal of Informetrics, 5*(1), 228–230. <https://doi.org/10.1016/j.joi.2010.10.009>
+
+Bornmann, L., & Williams, R. (2020). An evaluation of percentile measures of citation impact, and a proposal for making them better. *Scientometrics, 124*(2), 1457–1478. <https://doi.org/10.1007/s11192-020-03512-7>
+
+Bornmann, L., Haunschild, R., & Mutz, R. (2020). Should citations be field-normalized in evaluative bibliometrics? An empirical analysis based on propensity score matching. *Journal of Informetrics, 14*(4), 101098. <https://doi.org/10.1016/j.joi.2020.101098>
+
+Bradford, S. C. (1934). Sources of information on specific subjects. *Engineering, 26*(4), 85–86.
+
+Campanario, J. M. (2011). Empirical study of journal impact factors obtained using the classical two-year citation window versus a five-year citation window. *Scientometrics, 87*(1), 189–204. <https://doi.org/10.1007/s11192-010-0334-1>
+
+Clauset, A., Newman, M. E. J., & Moore, C. (2004). Finding community structure in very large networks. *Physical Review E, 70*(6), 066111. <https://doi.org/10.1103/PhysRevE.70.066111>
+
+Cleverdon, C. W. (1972). On the inverse relationship of recall and precision. *Journal of Documentation, 28*(3), 195–201. <https://doi.org/10.1108/eb026538>
+
+Cronin, B. (2001). Hyperauthorship: A postmodern perversion or evidence of a structural shift in scholarly communication practices? *Journal of the American Society for Information Science and Technology, 52*(7), 558–569. <https://doi.org/10.1002/asi.1097>
+
+Daniel, B. Klein, & Chiang, E. (2004). The social science citation index: A black box—with an ideological bias? *Econ Journal Watch, 1*(1), 134–165.
+
+Daraio, C., Lenzerini, M., Leporelli, C., Naggar, P., Bonaccorsi, A., & Bartolucci, A. (2016). The advantages of an ontology-based data management approach: Openness, interoperability and data quality. *Scientometrics, 108*(1), 441–455. <https://doi.org/10.1007/s11192-016-1913-6>
+
+Donner, P. (2018). Effect of publication month on citation impact. *Journal of Informetrics, 12*(1), 330–343. <https://doi.org/10.1016/j.joi.2018.01.012>
+
+Donner, P. (2024). Remarks on modified fractional counting. *Journal of Informetrics, 18*(4), 101585. <https://doi.org/10.1016/j.joi.2024.101585>
+
+Donner, P., Rimmert, C., & Van Eck, N. J. (2020). Comparing institutional-level bibliometric research performance indicator values based on different affiliation disambiguation systems. *Quantitative Science Studies, 1*(1), 150–170. <https://doi.org/10.1162/qss_a_00013>
+
+Egghe, L. (2010). The Hirsch index and related impact measures. *Annual Review of Information Science and Technology, 44*(1), 65–114. <https://doi.org/10.1002/aris.2010.1440440109>
+
+Egghe, L. (2012). Averages of ratios compared to ratios of averages: Mathematical results. *Journal of Informetrics, 6*(2), 307–317. <https://doi.org/10.1016/j.joi.2011.12.007>
+
+Egghe, L., & Rousseau, R. (1996). Average and global impact of a set of journals. *Scientometrics, 36*(1), 97–107. <https://doi.org/10.1007/BF02126648>
+
+El Gibari, S., Gómez, T., & Ruiz, F. (2022). Combining reference point based composite indicators with data envelopment analysis: Application to the assessment of universities. *Scientometrics, 127*(8), 4363–4395. <https://doi.org/10.1007/s11192-022-04436-0>
+
+Gauffriau, M., Larsen, P. O., Maye, I., Roulin-Perriard, A., & Von Ins, M. (2008). Comparisons of results of publication counting using different methods. *Scientometrics, 77*(1), 147–176. <https://doi.org/10.1007/s11192-007-1934-2>
+
+Glänzel, W. (2004). Towards a model for diachronous and synchronous citation analyses. *Scientometrics, 60*(3), 511–522. <https://doi.org/10.1023/B:SCIE.0000034391.06240.2a>
+
+Glänzel, W., & Czerwon, H. J. (1996). A new methodological approach to bibliographic coupling and its application to the national, regional and institutional level. *Scientometrics, 37*(2), 195–221. <https://doi.org/10.1007/BF02093621>
+
+Glänzel, W., Schlemmer, B., & Thijs, B. (2003). Better late than never? On the chance to become highly cited only beyond the standard bibliometric time horizon. *Scientometrics, 58*(3), 571–586. <https://doi.org/10.1023/B:SCIE.0000006881.30700.ea>
+
+Glänzel, W., & Thijs, B. (2012). Using ‘core documents’ for detecting and labelling new emerging topics. *Scientometrics, 91*(2), 399–416. <https://doi.org/10.1007/s11192-011-0591-7>
+
+Harzing, A.-W., & Alakangas, S. (2016). Google Scholar, Scopus and the Web of Science: A longitudinal and cross-disciplinary comparison. *Scientometrics, 106*(2), 787–804. <https://doi.org/10.1007/s11192-015-1798-9>
+
+Heintz, B. (2010). Numerische Differenz. Überlegungen zu einer Soziologie des (quantitativen) Vergleichs / Numerical difference. Toward a sociology of (quantitative) comparisons. *Zeitschrift für Soziologie, 39*(3), 162–181. <https://doi.org/10.1515/zfsoz-2010-0301>
+
+Hicks, D., Wouters, P., Waltman, L., de Rijcke, S., & Rafols, I. (2015). Bibliometrics: The Leiden Manifesto for Research Metrics. *Nature, 520*(7548), 429–431. <https://doi.org/10.1038/520429a>
+
+Hirsch, J. E. (2005). An index to quantify an individual’s scientific research output. *Proceedings of the National Academy of Sciences, 102*(46), 16569–16572. <https://doi.org/10.1073/pnas.0507655102>
+
+Jarneving, B. (2005). A comparison of two bibliometric methods for mapping of the research front. *Scientometrics, 65*(2), 245–263. <https://doi.org/10.1007/s11192-005-0270-7>
+
+Johnes, J. (2018). University rankings: What do they really show? *Scientometrics, 115*(1), 585–606. <https://doi.org/10.1007/s11192-018-2666-1>
+
+Kessler, M. M. (1963). Bibliographic coupling between scientific papers. *American Documentation, 14*(1), 10–25. <https://doi.org/10.1002/asi.5090140103>
+
+Kessler, M. M. (1963). Bibliographic coupling extended in time: Ten case histories. *Information Storage and Retrieval, 1*(4), 169–187. <https://doi.org/10.1016/0020-0271(63)90016-0>
+
+Larivière, V., & Gingras, Y. (2011). Averages of ratios vs. ratios of averages: An empirical analysis of four levels of aggregation. *Journal of Informetrics, 5*(3), 392–399. <https://doi.org/10.1016/j.joi.2011.02.001>
+
+Larsen, P. O., & Von Ins, M. (2010). The rate of growth in scientific publication and the decline in coverage provided by Science Citation Index. *Scientometrics, 84*(3), 575–603. <https://doi.org/10.1007/s11192-010-0202-z>
+
+Leydesdorff, L., & Opthof, T. (2010). Normalization at the field level: Fractional counting of citations. <https://doi.org/10.48550/ARXIV.1006.2896>
+
+Luke, D. A. (2015). *A user’s guide to network analysis in R*. Use R! Cham: Springer International Publishing. <https://doi.org/10.1007/978-3-319-23883-8>
+
+Makkonen, T., & Van Der Have, R. P. (2013). Benchmarking regional innovative performance: Composite measures and direct innovation counts. *Scientometrics, 94*(1), 247–262. <https://doi.org/10.1007/s11192-012-0753-2>
+
+Manning, C. D., Raghavan, P., & Schütze, H. (2009). *Introduction to information retrieval*. Cambridge University Press. <https://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf>
+
+Merton, R. K. (1968). The Matthew effect in science: The reward and communication systems of science are considered. *Science, 159*(3810), 56–63. <https://doi.org/10.1126/science.159.3810.56>
+
+Moed, H. F. (2010). Measuring contextual citation impact of scientific journals. *Journal of Informetrics, 4*(3), 265–277. <https://doi.org/10.1016/j.joi.2010.01.002>
+
+Mongeon, P., & Paul-Hus, A. (2016). The journal coverage of Web of Science and Scopus: A comparative analysis. *Scientometrics, 106*(1), 213–228. <https://doi.org/10.1007/s11192-015-1765-5>
+
+Moon, H. S., & Lee, J. D. (2005). A fuzzy set theory approach to national composite S&T indices. *Scientometrics, 64*(1), 67–83. <https://doi.org/10.1007/s11192-005-0238-7>
+
+Müller, M. C., Reitz, F., & Roy, N. (2017). Data sets for author name disambiguation: An empirical analysis and a new resource. *Scientometrics, 111*(3), 1467–1500. <https://doi.org/10.1007/s11192-017-2363-5>
+
+Mutschke, P., & Mayr, P. (2015). Science models for search: A study on combining scholarly information retrieval and scientometrics. *Scientometrics, 102*(3), 2323–2345. <https://doi.org/10.1007/s11192-014-1485-2>
+
+Nasir, A., Ali, T. M., Shahdin, S., & Rahman, T. U. (2011). Technology achievement index 2009: Ranking and comparative study of nations. *Scientometrics, 87*(1), 41–62. <https://doi.org/10.1007/s11192-010-0285-6>
+
+Nicolaisen, J., & Hjørland, B. (2007). Practical potentials of Bradford’s law: A critical examination of the received view. *Journal of Documentation, 63*(3), 359–377. <https://doi.org/10.1108/00220410710743298>
+
+OECD/European Union/EC-JRC. (2008). *Handbook on constructing composite indicators: Methodology and user guide*. Paris: OECD Publishing. <https://doi.org/10.1787/9789264043466-en>
+
+Powers, D. M. W. (2008). Evaluation: From precision, recall and F-Measure to ROC, informedness, markedness and correlation. *Mach. Learn. Technol., 2*. <https://doi.org/10.48550/ARXIV.2010.16061>
+
+Pudovkin, A. I., & Garfield, E. (2009). Percentile rank and author superiority indexes for evaluating individual journal articles and the author’s overall citation performance. *Collnet Journal of Scientometrics and Information Management, 3*(2), 3–10. <https://doi.org/10.1080/09737766.2009.10700871>
+
+Rimmert, C., Schwechheimer, H., & Winterhager, M. (2017). Disambiguation of author addresses in bibliometric databases - technical report. Bielefeld: Universität Bielefeld, Institute for Interdisciplinary Studies of Science (I²SoS).
+
+Shenton, A. K., & Hay-Gibson, N. V. (2011). Bradford’s Law and its relevance to researchers. *Education for Information, 27*(4), 217–230. <https://doi.org/10.3233/EFI-2009-0882>
+
+Sivertsen, G., Rousseau, R., & Zhang, L. (2019). Measuring scientific contributions with modified fractional counting. *Journal of Informetrics, 13*(2), 679–694. <https://doi.org/10.1016/j.joi.2019.03.010>
+
+Small, H. (1973). Co‐citation in the scientific literature: A new measure of the relationship between two documents. *Journal of the American Society for Information Science, 24*(4), 265–269. <https://doi.org/10.1002/asi.4630240406>
+
+Stahlschmidt, S., & Stephen, D. (2020). Comparison of Web of Science, Scopus and Dimensions databases. Berlin: Deutsches Zentrum für Hochschul- und Wissenschaftsforschung. <https://bibliometrie.info/downloads/DZHW-Comparison-DIM-SCP-WOS.PDF>
+
+Tang, L., & Walsh, J. P. (2010). Bibliometric fingerprints: Name disambiguation based on approximate structure equivalence of cognitive maps. *Scientometrics, 84*(3), 763–784. <https://doi.org/10.1007/s11192-010-0196-6>
+
+Tijssen, R. J. W., Visser, M. S., & Van Leeuwen, T. N. (2002). Benchmarking international scientific excellence: Are highly cited research papers an appropriate frame of reference? *Scientometrics, 54*(3), 381–397. <https://doi.org/10.1023/A:1016082432660>
+
+Traag, V. A., Waltman, L., & Van Eck, N. J. (2019). From Louvain to Leiden: Guaranteeing well-connected communities. *Scientific Reports, 9*(1), 5233. <https://doi.org/10.1038/s41598-019-41695-z>
+
+Traag, V. A., & Šubelj, L. (2023). Large network community detection by fast label propagation. *Scientific Reports, 13*(1), 2701. <https://doi.org/10.1038/s41598-023-29610-z>
+
+Van Raan, A. F. J. (2006). Comparison of the Hirsch-index with standard bibliometric indicators and with peer judgment for 147 chemistry research groups. *Scientometrics, 67*(3), 491–502. <https://doi.org/10.1556/Scient.67.2006.3.10>
+
+Vinkler, P. (2006). Composite scientometric indicators for evaluating publications of research institutes. *Scientometrics, 68*(3), 629–642. <https://doi.org/10.1007/s11192-006-0123-z>
+
+Waltman, L., & Van Eck, N. J. (2015). Field-normalized citation impact indicators and the choice of an appropriate counting method. *Journal of Informetrics, 9*(4), 872–894. <https://doi.org/10.1016/j.joi.2015.08.001>
+
+Wang, J. (2013). Citation time window choice for research impact evaluation. *Scientometrics, 94*(3), 851–872. <https://doi.org/10.1007/s11192-012-0775-9>
+
+Weinberg, B. H. (1974). Bibliographic coupling: A review. *Information Storage and Retrieval, 10*(5–6), 189–196. <https://doi.org/10.1016/0020-0271(74)90058-8>
+
+White, H. D., & Griffith, B. C. (1981). Author cocitation: A literature measure of intellectual structure. *Journal of the American Society for Information Science, 32*(3), 163–171. <https://doi.org/10.1002/asi.4630320302>
+
+Zhao, D., & Strotmann, A. (2008). Evolution of research activities and intellectual influences in information science 1996–2005: Introducing author bibliographic‐coupling analysis. *Journal of the American Society for Information Science and Technology, 59*(13), 2070–2086. <https://doi.org/10.1002/asi.20910>

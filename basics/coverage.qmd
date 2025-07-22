@@ -1,0 +1,43 @@
+# Coverage in Bibliometrics
+
+## What does Coverage mean in Bibliometrics?
+In bibliometrics, *coverage* refers to the extent to which a bibliographic database (or tool) includes relevant publications, journals, conferences, and other scholarly outputs within a specific field or across multiple disciplines. Coverage can be evaluated in terms of the breadth (range of subjects, disciplines, or publication types) and depth (historical range, level of detail in indexing) of the included materials. Effective coverage is crucial for comprehensive bibliometric analyses, as it directly impacts the accuracy and reliability of the results derived from the data. Besides the notion of coverage from a disciplinary perspective, it can also refer to the occurrence of missing data on the level of individual records in a database, which may also be referred to as *completeness*.
+
+## Why is it Important?
+There is no complete database of scientific publications including all the features that would qualify current bibliometric analyses. In that sense all databases are defined by a focus, some might say bias, towards specific criteria of inclusion. Both notions of coverage have substantial implications for bibliometric analyses.  For instance, adequate coverage ensures a more complete and accurate representation of the scholarly landscape, which in turn enables more valid comparisons across different fields, institutions, or time periods. Despite its importance for bibliometrics, balancing quality, i.e., more precisely, and more problematically, citation counts, vis-a-vis quantity or completeness might not be as straightforward as one might expect in matters of coverage. Among the current considerations are matters of post-colonial concern, e.g. contributions by the *periphery* of the science system such as the global south, with some scholars rejecting the notion of a primacy of the center vs. the periphery. Other aspects that problematize coverage in this way is identification of trends and gaps, where a higher coverage assists in identifying emerging research trends and potential gaps in the literature. The issue therefore is more complex than *the more, the merrier*.  
+
+Evaluating and ensuring coverage usually involves multiple aspects, such as:
+
+1. Assessment of Bibliometric Sources: Examining the scope and extent of bibliometric databases and tools to determine their coverage.
+2. Transparent Data Inclusion Criteria: Defining criteria for what types of publications and sources are included.
+3. Regular Updates and Expansion: Continuously updating and expanding databases to include new publications, journals, and other relevant scholarly outputs.
+4. Cross-Database Comparison: Comparing data across multiple bibliometric sources to identify coverage overlaps and gaps.
+
+
+## How Does it Work?
+Coverage is a concept that is more a matter of consideration than something that can be *performed* as a method in the stricter sense. More often than not, due to the commercial nature of bibliographic data and available resources. 
+With databases from the Web-of-Science-Family the criteria usually will be a derivative of citations over time relative to publication volume on the level of journals taking into account the disciplinary focus of said journals, a.k.a *quality*. Scopus seemingly aims for more of a balance between quality and quantity. Yet, in both cases, how, when and why a journal is included is not overly transparent. Moreover, which journals are being *put to review* is unclear as well, rendering the overall composition a bit of a mystery at times.  Descriptions of working groups or committees in part exist, yet these are also only moderately informative toward the issue. The prevalence of focus is not just present in established databases but also extends to current contenders. Sometimes at the cost of the second notion of coverage. The platform *Dimensions* features a larger collection of articles leading to an overall larger citation network but has issues with completeness.
+
+
+## Limitations
+
+#### Adequate Coverage is pricey 
+Achieving and maintaining extensive coverage requires significant resources and effort. This is especially true when understanding coverage as a dynamic concept rather than a static silo logic at a definite point in time. Main drivers are changes in the topic, field and publication landscape. 
+
+#### Coverage is politics by other means
+Coverage can be biased towards certain languages, regions, or disciplines, leading to skewed perspectives both from an evaluative as well as explorative perspective. Keeping up with the rapidly evolving landscape of scholarly publications is a continuous challenge.
+
+#### Coverage is exclusion
+Coverage should not be confused with unreflected inclusion. Selecting journals, repositories, hubs or articles always involves a judgment, even if done *100% algorithmically*.  In this sense understanding coverage can (and maybe should) be understood more along the lines of curation. Extensive coverage may result in an overwhelming amount of garbage data, complicating analysis and interpretation.
+
+## Further Reading
+
+Daniel, B. Klein, & Chiang, E. (2004). The Social Science Citation Index: A Black Box—With an Ideological Bias? *Econ Journal Watch, 1*(1), 134–165.
+
+Harzing, A.-W., & Alakangas, S. (2016). Google Scholar, Scopus and the Web of Science: A longitudinal and cross-disciplinary comparison. *Scientometrics, 106*(2), 787–804. <https://doi.org/10.1007/s11192-015-1798-9>
+
+Larsen, P. O., & Von Ins, M. (2010). The rate of growth in scientific publication and the decline in coverage provided by Science Citation Index. *Scientometrics, 84*(3), 575–603. <https://doi.org/10.1007/s11192-010-0202-z>
+
+Mongeon, P., & Paul-Hus, A. (2016). The journal coverage of Web of Science and Scopus: A comparative analysis. *Scientometrics, 106*(1), 213–228. <https://doi.org/10.1007/s11192-015-1765-5>
+
+Stahlschmidt, S., & Stephen, D. (2020). Comparison of Web of Science, Scopus and Dimensions databases. Berlin: Deutsches Zentrum für Hochschul- und Wissenschaftsforschung. <https://bibliometrie.info/downloads/DZHW-Comparison-DIM-SCP-WOS.PDF>

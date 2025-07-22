@@ -1,0 +1,37 @@
+# Bradford's Law of Scattering
+
+## What is Bradford’s Law about?
+Bradford's Law, formulated by Samuel C. Bradford in 1934, is a pattern often found in bibliometric studies, namely that in bibliometrics pretty much everything is distributed *log-normal*, i.e., among other characteristics, heavily right-skewed. The law describes the scatter or dispersion of scientific literature, that, if scientific journals are arranged in order of decreasing productivity of articles on a given subject, they may be divided into a nucleus of journals (so-called core journals) more particularly devoted to the subject and several groups or zones containing the same number of articles as the nucleus when the journals are increasingly less representative to the subject as a whole, i.e. they contain less works related to a specific matter. Bradford’s law then predicts the number of journals within the nucleus and zones. The relationship of size of the nucleus and the zones is, at least according to the original paper by Bradford: $1:b:b^2$. This may not be universally applicable today due to changes in the scientific publication landscape. Yet, in principle, the concept still holds up in the way Bradford's Law is famously summarized as: 
+
+> A small core of journals will account for the majority of significant scientific papers.
+
+## Why is Bradford’s Law important?
+Bradford's Law has been important for understanding and managing the expanse of scientific literature, assisting librarians and information scientists in identifying influential journals in a particular field, thus enabling allocation of resources for library collections. In the context of practical applications it may therefore support resource management in libraries by focusing on core journals. It also aids researchers in targeting the most focused journals for their work, both for reading and publication purposes. In this sense, it is also important for both evaluative and exploratory bibliometrics. Especially when aiming to evaluate or explore a thematic field, be it a discipline or a topic, using, at least in part, a journal-based strategy, Bradford’s Law will highlight both the strength and the weakness of a journal-based approach. First and foremost, Bradford’s Law provides an excellent argument to focus on core journals to produce an effective query for delineating a field or topic as it helps in identifying the most productive journals quickly and at the same time provides an argument, why there are limits to journal-based strategies; especially in the 2nd zone, the number of journals is squared compared to the 1st zone and this 1st zone already contains a factorised number of journals compared to the original core journals. The strengths in relying on Bradford’s Law to design effective queries are that a journal-based strategy will produce a vast number of results very quickly by identifying the core journals, perhaps together with domain experts on the subject in question. This benefit is usually in part qualified by publisher practices aiming to bundle journals into subscription packages providing marginal reductions when choosing said packages over individual subscriptions. Finally, Bradford’s Law may be used to give a rough prediction of a field’s size. Following the general rule of relationship between the 1st and 2nd zones, very rough assumptions can be made about how *large* a scientific field might be.
+
+## Limitations
+
+#### Sticking to Bradford’s Law will make your query more *mainstream*
+The main weaknesses lie in coverage. Over-reliance on Bradford’s Law will produce results that may over-represent the *mainstream* of a topic or field. In a similar vein, optimizing search strategies gearing toward Bradford’s law may not be possible in highly emerging topics or fields, or with high degrees of interdisciplinarity, where the publication strategies of authors may be geared toward more generalized outlets due to the lack of specialized journals not being available in early stages. 
+
+#### Bradford’s Law might be driven by multidisciplinary applications
+Another limitation of Bradford’s Law lies in the subjectivity of both article classification and journal selection. Especially in the long-tail of the distribution a single article in a journal will contribute to increasing the skewness of the overall distribution. In the case of bibliometrics, which is increasingly being used as a basis for tracing actual developments of fields or topics, e.g. in the context of systematic reviews, a large number of papers are *applications* of bibliometrics rather than bibliometric research in the stricter sense. 
+
+#### Bradford’s Law is (in some sense) field dependent
+Bradford’s Law may not apply uniformly across different subjects or disciplines. How it diverges from the ideal constants and coefficients may be dependent on a number of characteristics, i.e. a field's age, the application orientation of a field, tendencies for interdisciplinarity, rhythms of scientific outputs, funding etc. The digital age and open access movements have further altered the publication landscape and access patterns, which may also further affect the applicability and usefulness of Bradford's Law.
+
+#### Bradford’s Law abstracts from quality
+Bradford’s law makes absolutely no claim about quality. Scholars might jump to the conclusion that articles in the fringes, i.e. the 2nd zone, may always be of *low quality*. Even though anecdotal evidence might reflect this, especially in fields of high application-orientation, this can not qualify as a general rule. One prominent example might be the Hirsch-Index, a prominent measure of the productivity and impact of a researcher in their field. The article introducing the Hirsch-Index was published in Proceedings of the National Academy of Sciences (PNAS). Definitely not one of the core journals, an influential paper nonetheless.
+
+## Further Reading
+
+Bailón-Moreno, R., Jurado-Alameda, E., Ruiz-Baños, R., & Courtial, J. P. (2005). Bibliometric laws: Empirical flaws of fit. *Scientometrics, 63*(2), 209–229. <https://doi.org/10.1007/s11192-005-0211-5>
+
+Bradford, S. C. (1934). Sources of information on specific subjects. *Engineering, 26*(4), 85–86.
+
+Glänzel, W., & Thijs, B. (2012). Using ‘core documents’ for detecting and labelling new emerging topics. *Scientometrics, 91*(2), 399–416. <https://doi.org/10.1007/s11192-011-0591-7>
+
+Mutschke, P., & Mayr, P. (2015). Science models for search: A study on combining scholarly information retrieval and scientometrics. *Scientometrics, 102*(3), 2323–2345. <https://doi.org/10.1007/s11192-014-1485-2>
+
+Nicolaisen, J., & Hjørland, B. (2007). Practical potentials of Bradford’s law: A critical examination of the received view. *Journal of Documentation, 63*(3), 359–377. <https://doi.org/10.1108/00220410710743298>
+
+Shenton, A. K., & Hay-Gibson, N. V. (2011). Bradford’s Law and its relevance to researchers. *Education for Information, 27*(4), 217–230. <https://doi.org/10.3233/EFI-2009-0882>

@@ -1,0 +1,117 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Bibliometrics Quick Notes"
+  author:  
+    - name: Dr. Stephan Gauch
+      orcid: 0000-0002-4715-5400
+      affiliations: 
+        - name: Robert K. Merton Zentrum für Wissenschaftsforschung, Humboldt-Universität zu Berlin
+          url: https://www.rmz.hu-berlin.de/en
+  reader-mode: true
+  license: CC-BY
+  cover-image: images/cover.png
+  
+  sidebar:
+    title: "Quick Notes<br>"
+    alignment: center
+    logo: images/KB_logo_black-light.jpg
+  downloads: [pdf,epub]
+
+  page-footer:
+    center: |
+      <a href="https://www.bmbf.de/EN/Home/home_node.html"><img src="/images/bmftr_logo.jpg" style="width: 32%;"/></a>
+      <a href="https://www.rmz.hu-berlin.de/en/rmz"><img src="/images/rmz.png" style="width: 25%;"/></a>
+      <a href="https://www.sub.uni-goettingen.de/en"><img src="/images/SUB_logo.png" style="width: 35%;"/></a>
+    left: |
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.en">{{< iconify bxl:creative-commons size=xl >}}{{< iconify humbleicons:creative-commons-by size=xl >}}</a> Except where otherwise noted, content is licensed under a <br> <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International</a> license.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+      
+  favicon: images/KB_logo_black-light.jpg
+  site-url: https://kbquicknotes.github.io/
+  repo-url: https://github.com/subugoe/vamoko_steckbriefe
+  repo-branch: main
+  repo-actions: [source,issue]
+  
+  chapters:
+    - index.qmd
+    - part: "Basics"
+      chapters:
+      - basics/bradfords_law.qmd
+      - basics/citation_windows.qmd
+      - basics/coverage.qmd
+      - basics/disambiguation.qmd
+      - basics/precision_recall.qmd
+    - part: "Evaluate"
+      chapters:
+      - evaluate/composite_indicators.qmd
+      - evaluate/field_normalization.qmd
+      - evaluate/fractional_counting.qmd
+      - evaluate/hirsch_index.qmd
+      - evaluate/percentile_based_indicators.qmd
+      - evaluate/aor_roa.qmd
+    - part: "Explore"
+      chapters: 
+        - explore/wd.qmd
+        - explore/cda.qmd
+        - explore/bc.qmd
+        - explore/cc.qmd
+    - bibliography.qmd
+
+format:
+  html:
+    theme: [cosmo, style.scss]
+    code-link: true
+    number-sections: false
+  epub:
+    number-sections: false
+    toc: true
+    css: epub.css
+  pdf: 
+    documentclass: scrreprt
+    number-sections: false
+    keep-tex: true
+    include-in-header: 
+      - text: |
+          \usepackage[a4paper]{geometry}
+          \usepackage{ccicons}
+          \usepackage{academicons}
+          \definecolor{orcidlogocol}{HTML}{A6CE39}
+          \usepackage{ragged2e}
+          \usepackage{tikz}
+          \usepackage{fontspec}
+          \setsansfont{AtkinsonHyperlegibleNext}[
+              Path=fonts/next/,
+              Scale=0.9,
+              Extension = .otf,
+              UprightFont=*-Regular,
+              BoldFont=*-Bold,
+              ItalicFont=*-RegularItalic,
+              BoldItalicFont=*-BoldItalic,
+              ]
+          \setmainfont{AtkinsonHyperlegibleNext}[
+              Path=fonts/next/,
+              Scale=0.9,
+              Extension = .otf,
+              UprightFont=*-Regular,
+              BoldFont=*-Bold,
+              ItalicFont=*-RegularItalic,
+              BoldItalicFont=*-BoldItalic,
+              ]
+          \setmonofont{AtkinsonHyperlegibleMono}[
+              Path=fonts/mono/,
+              Scale=0.9,
+              Extension = .otf,
+              UprightFont=*-Regular,
+              BoldFont=*-Bold,
+              ItalicFont=*-RegularItalic,
+              BoldItalicFont=*-BoldItalic,
+              ]
+    template-partials: 
+      - tex/before-body.tex
+      - tex/passoptions.latex
+
+suppress-bibliography: true

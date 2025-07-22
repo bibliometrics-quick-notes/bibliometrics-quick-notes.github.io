@@ -1,0 +1,36 @@
+# Co-Citation Analysis
+
+## What is co-citation analysis?
+Co-citation analysis is a method used in bibliometrics to study the relationship between scientific publications and, in some of the derivatives, such as author-co-citation analysis (ACA), between other entities (nodes) that can be attributed to scientific publications. Two documents are co-cited, when they both receive (!) a citation from the same later (!) document. 
+The strength of co-citation equals the number of citing documents for which this is the case, i.e. a co-citation of strength 3 means that 3 documents cite both scientific publications under analysis. This implies that an analysis of co-citation can be performed for each combination of citable items in a bibliographic dataset. Essentially, if two papers are often cited together, it implies a topical or methodological relationship between them that in turn implies intellectual heritage. 
+This concept was introduced by Henry Small in the 1970s and is based on his notion that citations are *concept symbols* bringing together ideas from bibliometrics and semiotics, the latter being quite fashionable at that time. It shares a number of characteristics with bibliographic coupling (shared entries in reference lists between different papers), a concept that also relates to notions of *intellectual heritage*.
+
+## Why is co-citation analysis important?
+Co-citation analysis is important because it helps to map the structure, evolution and dynamics of scientific fields as they can change over time, with new scientific publications being produced that can contribute to co-citation structures. By *being attributed together*, co-citation reveals how knowledge areas are interconnected and can identify emerging trends and, with sufficient data and computational power, even the emergence of (sub-)disciplines. 
+The analysis is also crucial for understanding the influence of a particular work in a field, as frequent co-citations indicate a shared relevance or foundational and conceptual status among the cited works.
+
+## How Does it Work?
+See Bibliographic Coupling but reverse the order of multiplicand and multiplier when performing matrix multiplication.
+
+## Limitations
+
+### Calculating Co-Citation networks can be computationally intensive
+Citation networks can grow large very quickly, which is mainly due to the dominant nature of most phenomena in bibliometrics being *log-normal* distributed. The probably most efficient one-shot computational method to calculate co-citation is matrix multiplication. Yet, computing matrix multiplication is currently considered *P-hard*, which means that even though it actually can be solved in polynomial time, the computational time required for matrix multiplication grows rapidly, making it an expensive operation for large matrices, which in turn means that even if the number of papers to observe might be rather small, the dispersedness of citations can produce large matrices… and hence produce long computational times. 
+
+### Calculating co-citation can require substantial computational resources 
+As stated above, co-citation can be data intensive, which means that, despite the challenge of computation it also faces the challenge of very high quality data. In short: While the point about computational time is a *CPU (or GPU) problem*, the issue here is a *RAM (memory) problem*. The problems are not the same. Parallelizing the problem to decrease computation time, might come to a grinding halt because RAM is obliterated by the parallel computing threads and the large amounts of data. 
+
+### Co-Citation is less immediate compared to bibliographic coupling
+In bibliographic coupling, older publications might be over-represented. In co-citation the opposite is true as there is a time-lag involved (see citation windows). Citation data may not reflect the most current trends due to publication and citation delays. Yet, citation windows usually are not being applied (in contrast to evaluative bibliometrics).
+
+### Co-Citation is dependent on citation practices
+Variations in citation practices across fields can affect the results. It may therefore over- or under-represent some structures based in inter- or transdisciplinary fields.
+
+### Co-citation has a bias towards *disciplinarity*
+Even though co-citation can be used to identify new topics and fields, there is a bias involved that relates to the point about citation practices. Highly interdisciplinary work might be underrepresented in co-citation networks if it doesn't fit neatly into established citation patterns.
+
+## Further Reading
+
+Small, H. (1973). Co-citation in the scientific literature: A new measure of the relationship between two documents. *Journal of the American Society for Information Science, 24*(4), 265–69. <https://doi.org/10.1002/asi.4630240406>
+
+White, H. D., & Griffith, B. C. (1981). Author cocitation: A literature measure of intellectual structure. *Journal of the American Society for Information Science, 32*(3), 163–71. <https://doi.org/10.1002/asi.4630320302>

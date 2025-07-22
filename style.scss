@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+// Include theme-specific fonts
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i);
+
+// fonts
+$mainFont: "Atkinson Hyperlegible";
+$headingFont: "Atkinson Hyperlegible";
+$font-family-sans-serif: "Atkinson Hyperlegible";
+$presentation-heading-font: "Atkinson Hyperlegible";
+$monoFont: "Atkinson Hyperlegible Mono";
+
+.csl-indent {
+  margin-left: 3em;
+  text-indent: -2em;
+  padding: .05em;
+}

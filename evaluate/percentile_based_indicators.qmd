@@ -1,0 +1,41 @@
+# Percentile-Based Indicators (Excellence Rate, ppTopX)
+
+## What is it?
+In bibliometrics, percentile-based indicators are statistical measures used to evaluate and compare academic publications. These indicators place publications within the context of a larger set of data, typically by showing where a particular work falls in the distribution of all works in the same field or subject area. The ppTop10 (percentage of publications in the top 10%) is a specific type of percentile-based indicator. It measures the proportion of an entity's (such as an author’s, institution’s, or country’s) publications that are in the top 10% of the most cited papers in their respective fields. This is determined by comparing the citation count of a paper to that of other papers in the same field and year.
+
+## Why is it important?
+Percentile-based indicators follow two main arguments. The first refers to the issue of log-normality in the citation distribution, i.e. a lot of uncited and rarely cited papers and a very low number of very highly cited papers leading to a right-skewed distribution, and the discussion if the arithmetic mean (average) of the number of citations can provide a useful value in the light of these highly cited outliers. The usual reply to such problematisations is to use the median as a central value. In citation distributions the median, by nature being an integer value rather than a metric number, is often ranging between 0 and 2 (on a good day), which makes it a very bad metric to capture expectations of *the usual number of citations in a field*. While the median is rarely used, the percentile being used is rather the top 10%, 5% or 1%. Which leads to the second argument that also highlights its colloquial name: The excellence indicator. The argument in this case is that using the average as a benchmark, e.g. in field normalization, is misleading and does not provide substantial and good advice to policy makers. Rather, focus should be put on the upper parts of the citation distribution denoting notions of *excellence* rendering everything else as rather irrelevant *noise*. The share of a unit of observation in these excellent publications relative to the total amount produced captures the notion of: “How much excellence is there relative to the total output?” 
+
+## How It Works
+#### Step 0: Field and Year Normalization
+Each publication is compared to others within the same field and publication year. This ensures that the comparison is fair and accounts for variations in citation practices across different disciplines and over time. This is crucial as it controls for publication and citation practices between the different fields. 
+
+#### Step 1:  Ranking the total corpus by citation count
+ALL publications, or more precisely, all citable items, in a field for a specific publication year in a given database are ranked based on their citation count. 
+
+#### Step 2: Identifying Top 10%
+The top 10% of publications in terms of citation count are identified.
+
+#### Step 3: Calculating ppTop10
+The percentage of an entity's publications that fall into this top 10% category is calculated. For example, if an institution has 100 papers and 15 of them are in the top 10% most cited in their fields, the institution’s ppTop10 score would be 15%.
+
+A higher ppTop10 score suggests that a significant portion of an entity’s work is highly recognized in its field.
+
+## Limitations
+
+#### Excellence rates shift observation and discussion
+The strength of ppTop10 also contributes to its major weakness as it pushed discursive positions toward over-indexing on excellence as the only meaningful category. This might be useful in some discussions but shifts the discussion away from discussing emerging fields, topics or delayed reception. Overall, while ppTop10 indicates high citation levels, it doesn't account for the overall impact or quality of the research. Some important works may not be highly cited.
+
+## Further Reading
+
+Bornmann, L., & Mutz, R. (2011). Further steps towards an ideal method of measuring citation performance: The avoidance of citation (ratio) averages in field-normalization. *Journal of Informetrics, 5*(1), 228–230. <https://doi.org/10.1016/j.joi.2010.10.009>
+
+Bornmann, L., & Williams, R. (2020). An evaluation of percentile measures of citation impact, and a proposal for making them better. *Scientometrics, 124*(2), 1457–1478. <https://doi.org/10.1007/s11192-020-03512-7>
+
+Pudovkin, A. I., & Garfield, E. (2009). Percentile rank and author superiority indexes for evaluating individual journal articles and the author’s overall citation performance. *Collnet Journal of Scientometrics and Information Management, 3*(2), 3–10. <https://doi.org/10.1080/09737766.2009.10700871>
+
+Tijssen, R. J. W., Visser, M. S., & Van Leeuwen, T. N. (2002). Benchmarking international scientific excellence: Are highly cited research papers an appropriate frame of reference? *Scientometrics, 54*(3), 381–397. <https://doi.org/10.1023/A:1016082432660>
+
+Van Leeuwen, T. N. (2003). The Holy Grail of science policy: Exploring and combining bibliometric tools in search of scientific excellence. *Scientometrics, 57*(2), 257–280. <https://doi.org/10.1023/A:1024141819302>
+
+Waltman, L., & Schreiber, M. (2013). On the calculation of percentile‐based bibliometric indicators. *Journal of the American Society for Information Science and Technology, 64*(2), 372–379. <https://doi.org/10.1002/asi.22775>

@@ -1,0 +1,20 @@
+$if(title)$
+\begin{titlepage}
+\tikz [remember picture, overlay] %
+\node [shift={(1cm,-1cm)}] at (current page.north west) %
+[anchor=north west] %
+{\includegraphics[scale=.15]{images/KB_logo_black-light.jpg}};
+
+  \vfill
+  \centering
+  {\Huge \bfseries KB Quick Notes \par}
+  \vfill
+  {\Large 
+   Dr. Stephan Gauch \href{https://orcid.org/0000-0002-4715-5400}{\textcolor{orcidlogocol}{\aiOrcid}}\ \par
+   {\large Robert K. Merton Zentrum für Wissenschaftsforschung \par
+   Humboldt-Universität zu Berlin }}
+  \vfill
+  \justify
+  \ccby \\ This work is licensed under a \href{https://creativecommons.org/licenses/by/4.0/deed.en}{Creative Commons Attribution 4.0 License}
+\end{titlepage}
+$endif$

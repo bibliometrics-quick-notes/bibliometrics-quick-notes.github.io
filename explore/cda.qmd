@@ -1,0 +1,55 @@
+# Community Detection Algorithms in Bibliometrics
+
+## What is it?
+Community detection algorithms in bibliometrics are computational methods used to identify clusters or groups within scientific networks. These networks can be based on various relationships such as co-authorship on author, organization, regional or national level, citations, co-citations, shared keywords among scientific papers etc... 
+Said clustering can reveal hidden patterns, subfields, or research trends within a larger scientific domain.
+
+## Why is it Important?
+Visual inspection of networks above a certain size is challenging at best, especially if networks are unweighted, i.e. like with the current way we use citation data, which is largely showing if a paper cites another paper or not and does not show *how often* a paper mentions another. Visualizing such networks often leads to the so-called *hairball problem*. Finding structures in such networks visually(!) seems an almost impossible task with dense networks. 
+Also relying too much on attributes of nodes (degree, betweenness…) can usually be instructive when it comes to identifying *influential nodes* (authors, organizations), but is of very little use when the question relates to identifying structures. To achieve this, one way to move forward is using algorithms that identify *clusters* or *agglomerations*, in the loosest sense of the word, based mostly on either using matrix algebra, discrete mathematics, or graph theory. Common algorithms include modularity optimization methods, hierarchical clustering, and spectral clustering. Such algorithms come by a plethora of names: Structure-detection algorithms, community-detection algorithms, clustering algorithms etc… The common denominator is that these algorithms aim to uncover the structure of these networks by grouping nodes (again… such as authors, papers, or journals) into communities or clusters that are more densely connected with each other than with the rest of the network. By doing that, they can facilitate the analysis of the development, interaction, and interdisciplinary nature of various scientific fields or help identify emerging research areas and trends. As a strategic tool, identifying such *clusters* can guide organization and funding bodies in making informed decisions about resource allocation, based on the identification of key research areas and collaboration networks. Finally, using such algorithms can guide formative evaluation as it can continuously assist researchers in identifying potential collaborators or relevant research groups. 
+
+## How Does it Work?
+Implementing community detection algorithms involves a number of steps and there are certain flavors how these can be used in detail. Yet, quite usually, the following steps have to occur.
+
+### Step 1: Network Construction
+Building a network from bibliometric data, where nodes represent entities like authors or papers, and edges represent relationships like co-authorship or citations.
+
+### Step 2: Deduce the type of network and select algorithm
+Not all algorithms make sense for all kinds of networks. Select an appropriate algorithm based on the graph being directed or undirected as well as the graph being weighted or unweighted. Some algorithms require a fully connected graph not featuring multiple *components*, i.e. any node can be reached by any other node, or in other words, the graph has no *un-connected subgraphs*.
+
+### Step 3: Run analysis
+Applying community detection algorithms to the network. 
+
+### Step 4 Determine stable number of clusters/groups
+This usually involves an algorithm that optimizes towards a certain measure maximizing edge characteristics within clusters, such as average degree of nodes in a cluster, number of edges within a cluster etc… and minimizing this characteristic between clusters. There are a good dozen of means to do this (Elbow method, gap statistics, the Calinski–Harabasz index, the Davies–Bouldin index…)
+
+### Step 5 Labeling the clusters, Analysis and Interpretation
+Analyzing the resulting communities to draw insights about the underlying structure of the scientific network. 
+
+## Limitations
+
+### Algorithm Complexity
+Some community detection algorithms can be complex and computationally intensive depending largely on the size and density of the network. The more sparse and the smaller a network, the faster computation can go. Also, some algorithms of this sort can be *NP-hard*, i.e. solvable in  Nondeterministic Polynomial time leading to an exponential increase in computation relative to increasing the extent (number of nodes and edges) of the problem at hand making them *tricky* to solve quickly and easily. (To provide an understanding of what NP-hard means in practice: Problems being NP-hard is why most non-trivial cryptography *works*.)
+
+### Community detection is no silver bullet for interpretation 
+The results can sometimes be challenging to interpret, especially in highly interconnected or multidisciplinary fields or situations of complex interconnectedness, for instance, when the connectedness is a phenomenon in and of itself like in the case of interdisciplinarity. 
+
+### Structure Detection algorithms detect structures
+That’s what they do. This does not mean that different algorithms produce the same conclusions or that one conclusion has more *validity* than another. There are some common metrics that resemble quality measures from inferential statistics, such as modularity, but they only are interpretable within very limited confines. Furthermore, humans are excellent pattern recognition machines, leading to usually a stance of expressing their own ideas about structures onto the results, which in turn usually leads more to a *see what you already know* situation.
+
+### Dependence on Data Quality
+The effectiveness of community detection is heavily reliant on the quality and completeness of the bibliometric data.
+
+## Further Reading
+
+Blondel, V. D., Guillaume, J.-L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. *Journal of Statistical Mechanics: Theory and Experiment, 2008*(10), P10008. <https://doi.org/10.1088/1742-5468/2008/10/P10008>
+
+Clauset, A., Newman, M. E. J., & Moore, C. (2004). Finding community structure in very large networks. *Physical Review E, 70*(6), 066111. <https://doi.org/10.1103/PhysRevE.70.066111>
+
+Luke, D. A. (2015). *A user’s guide to network analysis in R*. Use R! Cham: Springer International Publishing. <https://doi.org/10.1007/978-3-319-23883-8>
+
+Newman, M. E. J., & Girvan, M. (2004). Finding and evaluating community structure in networks. *Physical Review E, 69*(2), 026113. <https://doi.org/10.1103/PhysRevE.69.026113>
+
+Traag, V. A., Waltman, L., & Van Eck, N. J. (2019). From Louvain to Leiden: Guaranteeing well-connected communities. *Scientific Reports, 9*(1), 5233. <https://doi.org/10.1038/s41598-019-41695-z>
+
+Traag, V. A., & Šubelj, L. (2023). Large network community detection by fast label propagation. *Scientific Reports, 13*(1), 2701. <https://doi.org/10.1038/s41598-023-29610-z>
