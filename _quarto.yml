@@ -31,8 +31,8 @@ book:
       This book was built with <a href="https://quarto.org/">Quarto</a>.
       
   favicon: images/KB_logo_black-light.jpg
-  site-url: https://kbquicknotes.github.io/
-  repo-url: https://github.com/subugoe/vamoko_steckbriefe
+  site-url: https://bibliometrics-quick-notes.github.io/
+  repo-url: https://github.com/bibliometrics-quick-notes/bibliometrics-quick-notes.github.io
   repo-branch: main
   repo-actions: [source,issue]
   
