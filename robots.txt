@@ -1,1 +1,1 @@
-Sitemap: https://kbquicknotes.github.io/sitemap.xml
+Sitemap: https://bibliometrics-quick-notes.github.io/sitemap.xml
