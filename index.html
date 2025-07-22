@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Stephan Gauch">
+
+<title>Bibliometrics Quick Notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./basics/bradfords_law.html" rel="next">
+<link href="./images/KB_logo_black-light.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7f1587737b20c1e12948b299ecb895d5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">What is all this?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/KB_logo_black-light.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Quick Notes<br></a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/subugoe/vamoko_steckbriefe" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Bibliometrics-Quick-Notes.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Bibliometrics-Quick-Notes.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">What is all this?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics/bradfords_law.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bradford’s Law of Scattering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics/citation_windows.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Citation Windows</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics/coverage.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Coverage in Bibliometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics/disambiguation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Institutional Disambiguation in Bibliometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics/precision_recall.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Precision and Recall</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluate</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/composite_indicators.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Composite Indicators in Bibliometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/field_normalization.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Field Normalization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/fractional_counting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fractional Counting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/hirsch_index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hirsch-Index (h-index)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/percentile_based_indicators.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Percentile-Based Indicators (Excellence Rate, ppTopX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate/aor_roa.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AoR (Averages of Ratios) vs.&nbsp;RoA (Ratios of Averages) in Bibliometrics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Explore</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./explore/wd.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Weightedness and Directedness of a Graph in Bibliometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./explore/cda.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Community Detection Algorithms in Bibliometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./explore/bc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bibliographic Coupling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./explore/cc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Co-Citation Analysis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliography.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-all-this" id="toc-what-is-all-this" class="nav-link active" data-scroll-target="#what-is-all-this">What is all this?</a>
+  <ul class="collapse">
+  <li><a href="#but-why" id="toc-but-why" class="nav-link" data-scroll-target="#but-why">But… why?</a></li>
+  <li><a href="#who-i-think-might-enjoy-reading-this" id="toc-who-i-think-might-enjoy-reading-this" class="nav-link" data-scroll-target="#who-i-think-might-enjoy-reading-this">Who (I think) might enjoy reading this?</a></li>
+  <li><a href="#where-to-start-with-the-quick-notes" id="toc-where-to-start-with-the-quick-notes" class="nav-link" data-scroll-target="#where-to-start-with-the-quick-notes">Where to start with the Quick Notes?</a></li>
+  <li><a href="#how-the-quick-notes-are-structured" id="toc-how-the-quick-notes-are-structured" class="nav-link" data-scroll-target="#how-the-quick-notes-are-structured">How the Quick Notes are structured</a></li>
+  <li><a href="#thats-an-awful-lot-of-starting-points-and-not-much-of-a-conclusion" id="toc-thats-an-awful-lot-of-starting-points-and-not-much-of-a-conclusion" class="nav-link" data-scroll-target="#thats-an-awful-lot-of-starting-points-and-not-much-of-a-conclusion">That’s an awful lot of starting points and not much of a conclusion</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/subugoe/vamoko_steckbriefe/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/subugoe/vamoko_steckbriefe/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bibliometrics Quick Notes</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Stephan Gauch <a href="https://orcid.org/0000-0002-4715-5400" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.rmz.hu-berlin.de/en">
+            Robert K. Merton Zentrum für Wissenschaftsforschung, Humboldt-Universität zu Berlin
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+<section id="what-is-all-this" class="level1">
+<h1>What is all this?</h1><p><img src="images/cover.png" title="Bibliometrics Quick Notes" class="quarto-cover-image nolightbox img-fluid"></p>
+<p>In the legal professions, there is a concept that in German carries the wonderful name “Loseblattsammlung” (aka looseleaf binder, often as part of a subscription then called looseleaf service). You pay for the joy of receiving bundles of notes on some legal topic or issue, that you then may neatly file away in a special folder in order to be “up to date” on all the relevant facts and concerns surrounding said topic. In a way, what you are currently looking at is also some sort of a looseleaf binder, in that it aims to inform you on things. Yet, in contrast to being “all up to date all the time,” it is rather something that should get you “up to speed” in that it gives you a starting point for a subset of topics and concepts in bibliometrics. Also, there is no real service to subscribe to. Rather, these notes are a starting point of starting points.</p>
+<section id="but-why" class="level2">
+<h2 class="anchored" data-anchor-id="but-why">But… why?</h2>
+<p>“Why not write a proper textbook?” you might say. And yeah, sure, thanks, great suggestion! I probably could give a number of excuses. But rather than those, I give you this. Also, I thought it would be best to have something to just jump in without prior training in order to set a basis for an inclusive discourse about the concepts and ideas discussed. Having recently screened the state of bibliometrics in use, I see a lot of contributions that would probably not qualify for publication in a bibliometric core journal. I don’t think that is a problem in itself. I also don’t subscribe to the notion that authors of such contributions are per se “incompetent” or just have to “see the light” or should be prevented from trying new things. Not necessarily (only) for moral reasons - the latent elitism should be obvious - but for pragmatic ones. There is a lot of talk about being “responsible” when working with metrics. That’s true for sure, right? Yet, it also is also quite funny in my book, since one probably would have a bit of a hard time to find vocal advocates for a) the “irresponsible” use of metrics, or, for that matter, b) “meaningless” metrics or c) measuring what is “irrelevant”. So these pleas don’t really do much on their own. Anyway! Rather than thinking of commandments, I opted for this: Providing a simple starting point to allow interested newcomers to join the party.</p>
+</section>
+<section id="who-i-think-might-enjoy-reading-this" class="level2">
+<h2 class="anchored" data-anchor-id="who-i-think-might-enjoy-reading-this">Who (I think) might enjoy reading this?</h2>
+<p>Well, first, foremost and obviously, anyone who wants to know what bibliometrics is about.</p>
+<p>Obvious candidates are:</p>
+<ul>
+<li>Students not having access to an introductory bibliometrics course and want to start learning.</li>
+<li>Students that do have access to an introductory bibliometrics course, but struggle with getting a grip on the basic concepts and how they relate to each other.</li>
+<li>Practitioners and administrators planning to use bibliometrics in their work and need a starting point (sic!) on what’s what.</li>
+<li>Policymakers who want to engage in a discourse with the bibliometric community and connect on the level of language use, what concepts bibliometricians believe to be relevant and why they believe that.</li>
+<li>Anyone who wants to better understand a bibliometric study.</li>
+</ul>
+</section>
+<section id="where-to-start-with-the-quick-notes" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-start-with-the-quick-notes">Where to start with the Quick Notes?</h2>
+<p>Is there a structure to the individual notes? Do they have to be read in a particular order? Yes, and no. No, you may read this in any order you see fit. Yes, starting with the basics might be a good idea, but I guess you would have figured that out on your own and would not need a cue for that. Also yes, I tend to bracket bibliometrics into the following territories and did so in the Quick Notes as well.</p>
+<p><strong>Evaluative bibliometrics</strong>, the territory of the vertical, where the tideous repetitiveness lives. What is “countable”, based on an argument of shared characteristics, e.g.&nbsp;one citation being just like any other citation, is stacked up to find out who are the “best of the best of the really very, very bestest”. For better or worse as numerous reform initiatives suggest.</p>
+<p><strong>Explorative bibliometrics</strong> is the territory of the horizontal. The realm of mapping and charting the old and the new or finding some path from one peculiarity to another. How do topics evolve? Who cooperates with whom? These sorts of things. The Explorative and the Evaluative are quite neighborly, since you can try to translate many horizontal phenomena into vertical signifiers of “value” or “quality”. A bibliometric mapping exercise can be both speak for “success in community building” as well as “representation of a community”. Hence, borders here are sometimes rather loosely defined. Yet, both can have rather different ideas of what is “relevant” or “adequate”.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Both of these territories share that they work “with” databases in some way or another.</p>
+<p><strong>Curative bibliometrics</strong> is the territory responsible for keeping things in order. Pruning, weeding things out, naming all the things properly, etc. In practical terms: Making sure that mapping and counting can be done “adequately” and in a proper orderly fashion. Obviously, this is less working with the database but rather “on” the databases.</p>
+<p>Finally, <strong>reflexive bibliometrics</strong>, a territory that I consider myself the most with nowadays, is a home for those who do not necessarily(!) work with databases or not necessarily(!) work on databases - usually they can do both, too - but try to understand how working with and working on databases shapes what bibliometricians do, what others do with what bibliometricians do, and what others, e.g.&nbsp;researchers, do when observing what other others do, e.g.&nbsp;funders, with things that bibliometricians do and how all of this plays together. So, inhabitants are rather interested in the idea of working on the profession of bibliometrics and performativity of bibliometrics, i.e.&nbsp;how measures or maps rather “produce” what they seek to “show”.</p>
+<p>Anyway. I digress, again. Let’s move on.</p>
+</section>
+<section id="how-the-quick-notes-are-structured" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-quick-notes-are-structured">How the Quick Notes are structured</h2>
+<p>The notes themselves definitely have an internal structure. All documents start with a “What is this about” section, giving a rough idea what concept the note is about. Next, you will find some sort of a situating passage. Why is that concept important in bibliometrics? Where applicable, you will find a passage on “How does this work?” giving some verbalized idea of the procedures involved.</p>
+<p>The Quick Notes do NOT contain code. Preposterous! Where is the tutorial? Isn’t bibliometrics also a craft? Of course it is! And there might be more to come. Eventually. I guess. Anyway!</p>
+<p>The last section contains limitations and critique towards or at least related to the concept. These are not the result of a careful screening exercise but rather me channeling the field. Last but not least: References. Another starting point. Obviously, that selection is illustrative and not exemplary.</p>
+<p>Another aspect that structures the Quick Notes is their length. They are almost insultingly short given the glorious purpose an ambitious reader might throw at them. Needless to say: Each is a rabbit hole. A bottomless pit of sorts. Each and every one of the topics makes for a quite wonderful fetish. Consider these notes a shovel, at maximum a very tiny and short ladder. The absolute minimum that these should achieve though is getting you, dear reader, to be able to discuss these issues with those that are more versed and have already dug a deeper hole for themselves. The absolute maximum is getting you hooked on one or more of these fetishes.</p>
+</section>
+<section id="thats-an-awful-lot-of-starting-points-and-not-much-of-a-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="thats-an-awful-lot-of-starting-points-and-not-much-of-a-conclusion">That’s an awful lot of starting points and not much of a conclusion</h2>
+<p>Indeed. This is intentional and pretty much by design. These notes are supposed to leave you, dear reader, a tad unfulfilled. So it’s not an all-inclusive trip but rather a badly drawn map on a napkin to instill the recklessness of, dare I say, adventure. Also, you might have realised that the Quick Notes don’t have a DOI. This is not a coincidence! You should, for multiple reasons, not reference these notes. First of all, they are, for reasons argued above and didactic purposes, shallow, dramatically short, on the brink of being oversimplified. The aim is to have you understand the basics. So, rather than referencing these notes, I would rather have them shared.</p>
+<p>Some final remarks: Why did you not make this a proper Wiki? Well, all of this is licensed CC-BY. Go forth and wreak havoc. Why did you not cover [insert your favourite fetish here]? Great question! Thank you! Can I contribute to this or write a Quick Note myself? Color me delighted! For the moment, I guess you might just contact me about this: <a href="mailto:stephan.gauch@hu-berlin.de">stephan.gauch@hu-berlin.de</a>.</p>
+<p>Anyway.</p>
+<p>Enjoy the ride.</p>
+<p>Berlin, 18 Jul 2025</p>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>I want to thank a lot of people. First of all, the Working Group “Competence development” of the <a href="https://bibliometrie.info/en/">Competence Network Bibliometrics (KB)</a>, who participated in the selection of and discussion on these topics. I also would extend my thanks to Sophia Dörner, Beatrice Yefimov, and Najko Jahn, who supported the finalisation and polishing of these Quick Notes. All the remaining shortcomings that survived these scrutinous efforts are probably, no, eventually, intentional but in any case my own.</p>
+<p>The development of these Quick Notes was partially funded by the Federal Ministry of Research, Technology and Space (BMFTR) in terms of the VaMoKo project (FKZ 16WIK2101D).</p>
+<p>The material is free to use and re-use, licensed under the <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0 License</a>.</p>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Using a “citation window” means to count the incoming citations to a contribution of a pre-defined period of time in order to prevent unfair comparison of old and new publications. After all, the old ones had more time to get cited. Makes sense in evaluation, but probably less so when the aim is to explore or map something. The difference between a) “We need to compare fairly and therefore have to control for unfair advantage of old publications!” does not play well with b) “Why cut off a part of the past of a field, when your interest is in the past of a field?”. There is, of course, a Quick Note on Citation Windows.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/kbquicknotes\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./basics/bradfords_law.html" class="pagination-link" aria-label="Bradford's Law of Scattering">
+        <span class="nav-page-text"><span class="chapter-title">Bradford’s Law of Scattering</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="https://creativecommons.org/licenses/by/4.0/deed.en"><iconify-icon role="img" inline="" icon="bxl:creative-commons" style="font-size: 1.5em;" aria-label="Icon creative-commons from bxl Iconify.design set." title="Icon creative-commons from bxl Iconify.design set."></iconify-icon><iconify-icon role="img" inline="" icon="humbleicons:creative-commons-by" style="font-size: 1.5em;" aria-label="Icon creative-commons-by from humbleicons Iconify.design set." title="Icon creative-commons-by from humbleicons Iconify.design set."></iconify-icon></a> Except where otherwise noted, content is licensed under a <br> <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International</a> license.</p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://www.bmbf.de/EN/Home/home_node.html"><img src="./images/bmftr_logo.jpg" style="width: 32%;"></a> <a href="https://www.rmz.hu-berlin.de/en/rmz"><img src="./images/rmz.png" style="width: 25%;"></a> <a href="https://www.sub.uni-goettingen.de/en"><img src="./images/SUB_logo.png" style="width: 35%;"></a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/subugoe/vamoko_steckbriefe/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/subugoe/vamoko_steckbriefe/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
